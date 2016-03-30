@@ -1018,7 +1018,7 @@ fieldset h1 {
 
 /*TWEET FEED PANEL*/
 #tweet-feed {
-    background: #FD5253;
+    background: #18d4ff;
     background-size: cover;
 }
 
@@ -2879,8 +2879,30 @@ ul.foot-links li:hover{
 /* ====================================================*/
 /* Lucus coding
 /* =====================================================*/
-
-
+.videoList{
+    padding:20px 0 20px 0;
+    display: block;
+    height: 150px;
+}
+.videoList li{
+    float: left;
+    list-style-type: none;
+    margin-left: 20px;
+    width: 260px;
+    height: 147px;
+}
+.videoList img{
+    width: 260px;
+    height: 147px;
+    z-index: 9;
+}
+.videoList a{
+    width: 260px;
+    height: 147px;
+    display: block;
+    background:#000;
+    z-index: 999;
+}
 .newShare{
     width: 292px;
     height: 120px;
@@ -2950,8 +2972,6 @@ ul.foot-links li:hover{
     background:#fff;
 }
 .couponsDes p{
-    
-    
     font-weight: bold;
 }
 .couponsDes em{

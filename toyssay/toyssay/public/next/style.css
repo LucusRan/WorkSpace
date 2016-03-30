@@ -3049,7 +3049,7 @@ ul.foot-links li:hover{
     position: absolute;
     top: -30px;
     left:-30px;
-    opacity: 1;
+    opacity: 0;
     z-index: 9;
     -webkit-transition: all 0.6s ease-in-out;
     

@@ -150,7 +150,7 @@
           </div>
           <div class="second">
             <div class="arrow-left"></div>
-            <div class="content">优惠</div>
+            <div class="content">置换</div>
           </div>
         </a>
       </li>
@@ -163,7 +163,7 @@
           </div>
           <div class="second">
             <div class="arrow-left"></div>
-            <div class="content">活动</div>
+            <div class="content">优惠</div>
           </div>
         </a>
       </li>
@@ -175,11 +175,12 @@
 
 <div id="logo" class="hidden-xs"><img alt="" title="" src="public/next/logo2x.png" height="125"  onclick="actNav()" >
   <input type="checkbox" class="actNavBtn">
+  <div class="actNavBox">
     <div class="actNav" id="actNav1">学习</div>
     <div class="actNav" id="actNav2">收藏</div>
     <div class="actNav" id="actNav3">置换</div>
     <div class="actNav" id="actNav4">活动</div>
-    
+  </div>
 </div>
 
 
@@ -373,24 +374,28 @@
         </div>
         <div class="videoList">
             <ul>
-                <li><a href=""><img src="public/next/video.jpg" class="img-thumbnail"></a></li>
-                <li><img src="public/next/video.jpg" class="img-thumbnail"></li>
-                <li><img src="public/next/video.jpg" class="img-thumbnail"></li>
+                <li><a href="#"><img src="public/next/video.jpg" class="img-thumbnail"></a></li>
+                <li><a href="#"><img src="public/next/video.jpg" class="img-thumbnail"></a></li>
+                <li><a href="#"><img src="public/next/video.jpg" class="img-thumbnail"></a></li>
             </ul>
         </div>
 
         <div class="row add-top">
           <article class="col-md-3 col-xs-6 text-center skill-wrap">
-            <div class="chart1 easyPieChart" data-percent="86" style="width: 140px; height: 140px; line-height: 140px;">86%<span>体能</span><canvas width="210" height="210" style="width: 140px; height: 140px;"></canvas></div>
+            <div class="chart1 easyPieChart" data-percent="86" style="width: 80px; height: 80px; line-height: 80px;">79篇<span>体能</span>
+            <canvas width="100" height="100" style="width: 50px; height: 50px;">
+              
+            </canvas>
+            </div>
           </article>
           <article class="col-md-3 col-xs-6 text-center skill-wrap">
-            <div class="chart2 easyPieChart" data-percent="94" style="width: 140px; height: 140px; line-height: 140px;">94%<span>音乐</span><canvas width="210" height="210" style="width: 140px; height: 140px;"></canvas></div>
+            <div class="chart2 easyPieChart" data-percent="94" data-dimension="100" style="width: 140px; height: 140px; line-height: 140px;">94篇<span>音乐</span><canvas width="210" height="210" style="width: 140px; height: 140px;"></canvas></div>
           </article>
           <article class="col-md-3  col-xs-6 text-center skill-wrap">
-            <div class="chart3 easyPieChart" data-percent="79" style="width: 140px; height: 140px; line-height: 140px;">79%<span>图画</span><canvas width="210" height="210" style="width: 140px; height: 140px;"></canvas></div>
+            <div class="chart3 easyPieChart" data-percent="79" style="width: 140px; height: 140px; line-height: 140px;">101篇<span>图画</span><canvas width="210" height="210" style="width: 140px; height: 140px;"></canvas></div>
           </article>
           <article class="col-md-3  col-xs-6 text-center skill-wrap">
-            <div class="chart4 easyPieChart" data-percent="88" style="width: 140px; height: 140px; line-height: 140px;">88%<span>沟通</span><canvas width="210" height="210" style="width: 140px; height: 140px;"></canvas></div>
+            <div class="chart4 easyPieChart" data-percent="58" style="width: 140px; height: 140px; line-height: 140px;">81篇<span>沟通</span><canvas width="210" height="210" style="width: 140px; height: 140px;"></canvas></div>
           </article>
         </div>
 
@@ -740,7 +745,9 @@
         <div class="row">
 
           <article class="col-md-12 text-left fx fx-flipInY animated flipInY">
-            
+            <p class="badge"><a href="#">蒙特梭利</a></p>
+            <p class="badge"><a href="#">自然理论</a></p>
+            <button type="button" class="btn btn-default">了解更多</button>
             <div id="cbp-qtrotator" class="cbp-qtrotator">
           <div style="transition: opacity 700ms ease 0s;" class="cbp-qtcontent cbp-qtcurrent">
             <img alt="" title="" src="public/next/01_002.jpg">
@@ -751,10 +758,12 @@
           </div>
           <div style="transition: opacity 700ms ease 0s;" class="cbp-qtcontent">
             <img alt="" title="" src="public/next/02.jpg">
+
             <blockquote>
               <p>寓教于乐的现代教育方法--生活即教育。</p>
               <footer>陶行知</footer>
             </blockquote>
+             
           </div>
           <div style="transition: opacity 700ms ease 0s;" class="cbp-qtcontent">
             <img alt="" title="" src="public/next/03.jpg">
@@ -872,7 +881,7 @@ semper. Integer venenatis erat at sodales pharetra. Suspendisse sed erat
             <!-- service-content : ends -->
             </div>
             <!-- rb : ends -->
-
+            <button type="button" class="btn btn-default serviceBtn">了解更多</button>
           </li>
 
           <li class="next-bg-two">
@@ -937,7 +946,7 @@ semper. Integer venenatis erat at sodales pharetra. Suspendisse sed erat
             <!-- service-content : ends -->
             </div>
             <!-- rb : ends -->
-            
+            <button type="button" class="btn btn-default serviceBtn">详情</button>
           </li>
 
           <li class="next-bg-three">
@@ -1002,7 +1011,7 @@ semper. Integer venenatis erat at sodales pharetra. Suspendisse sed erat
             <!-- service-content : ends -->
             </div>
             <!-- rb : ends -->
-            
+            <button type="button" class="btn btn-default serviceBtn">了解更多</button>
           </li>
 
           <li class="rb-span-4 next-bg-six">
@@ -1067,7 +1076,7 @@ semper. Integer venenatis erat at sodales pharetra. Suspendisse sed erat
             <!-- service-content : ends -->
             </div>
             <!-- rb : ends -->
-            
+            <button type="button" class="btn btn-default serviceBtn">了解更多</button>
           </li>
 
           <li class="rb-span-2 next-bg-five">
@@ -1132,7 +1141,7 @@ semper. Integer venenatis erat at sodales pharetra. Suspendisse sed erat
             <!-- service-content : ends -->
             </div>
             <!-- rb : ends -->
-            
+            <button type="button" class="btn btn-default serviceBtn">了解更多</button>
           </li>
 
           <li class="rb-span-2 next-bg-eight">
@@ -1198,7 +1207,7 @@ semper. Integer venenatis erat at sodales pharetra. Suspendisse sed erat
             <!-- service-content : ends -->
             </div>
             <!-- rb : ends -->
-            
+            <button type="button" class="btn btn-default serviceBtn">了解更多</button>
           </li>
 
         </ul>
@@ -1215,6 +1224,17 @@ semper. Integer venenatis erat at sodales pharetra. Suspendisse sed erat
 </section>
 <!-- SERVICES : ENDS -->
 
+<section class="page-section  changeContent">
+      
+      <section class="container animated rollIn">
+        <div class="row">
+          <article class="col-md-12 text-left">
+            <h2 class="page-heading page-heading-alt">物品置换</h2>
+            <div class="liner"><span></span></div>
+          </article>
+        </div>
+      </section>
+</section>
 
 <!-- CONTACT : STARTS -->
 <section id="contact" class="page-section">
@@ -1573,9 +1593,7 @@ semper. Integer venenatis erat at sodales pharetra. Suspendisse sed erat
       });
     </script>
 
-<script>
 
-</script>
 
 <script>
 /*        var navigation = responsiveNav("#nav", { // Selector: The ID of the wrapper

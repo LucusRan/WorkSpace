@@ -39,6 +39,11 @@
 <link href="public/next/style.css" rel="stylesheet">
 <link type="text/css" media="screen" rel="stylesheet" href="public/next/awwwards.css">
 
+<!--logo Btn css-->
+<link rel="stylesheet" type="text/css" href="public/next/demo.css" />
+<link rel="stylesheet" type="text/css" href="public/next/component2.css" />
+<script src="public/next/modernizr-2.6.2.min.js"></script>
+
 <script src="public/next/modernizr.js"></script>
 <!--<script src="public/next/modernizr_003.js"></script>
 <script src="public/next/modernizr_002.js"></script>-->
@@ -47,7 +52,7 @@
 
 <body style="padding-top: 50px;">
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar  navbar-fixed-top navstyle">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -57,27 +62,34 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">礼豆·亲子</a>
+      <a class="navbar-brand navTit" href="#">礼豆·亲子</a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+        <li><a href="#">首页</a></li>
+        <li class="navActive"><a href="#">课堂</a></li>
+        <li><a href="#">圈子</a></li>
+        <li><a href="#">攻略</a></li>
+        <li><a href="#">置换</a></li>
+        <li><a href="#">优惠</a></li>
       </ul>
 </nav>
 
 <div id="logo" class="hidden-xs"><img alt="" title="" src="public/next/logo2x.png" height="125"  onclick="actNav()" >
-  <input type="checkbox" class="actNavBtn">
-    <div class="actNavBox">
-        <div class="actNav" id="actNav1">学习</div>
-        <div class="actNav" id="actNav2">收藏</div>
-        <div class="actNav" id="actNav3">置换</div>
-        <div class="actNav" id="actNav4">活动</div>
-    </div>
-    
-    
+    <div class="component">
+        <button class="cn-button" id="cn-button">Menu</button>
+        <div class="cn-wrapper" id="cn-wrapper">
+            <ul>
+                <li><a href="#" class="wrapper-a6"><span>首页</span></a></li>
+                <li><a href="#" class="wrapper-a5"><span>课堂</span></a></li>
+                <li><a href="#" class="wrapper-a4"><span>圈子</span></a></li>
+                <li><a href="#" class="wrapper-a3"><span>攻略</span></a></li>
+                <li><a href="#" class="wrapper-a2"><span>置换</span></a></li>
+                <li><a href="#" class="wrapper-a1"><span>优惠</span></a></li>
+            </ul>
+        </div>
+        
+     </div>   
 </div>
 <div class="container listPage" style="Overflow:hidden;">
     <div class="row">
@@ -93,8 +105,8 @@
                         <p><a href="#">关注：100000</a></p>
                         </div>
                         <div class="liR col-xs-9 col-sm-9 col-md-10 col-lg-10 bgc">
-                        <p class="badge"><a href="#">分类标题</a></p>
-                        <h2><a href="#">文章标题</a></h2>
+                        <p class="badge listLabel"><a href="#">分类标题</a></p>
+                        <h2 class="listTit"><a href="#">文章标题</a></h2>
                         <p>文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要</p>
                         <ul>
                             <li class="listImg"><img src="public/next/portfolio2_rollover.jpg"></li>
@@ -120,35 +132,8 @@
                         <p><a href="#">关注：100000</a></p>
                         </div>
                         <div class="liR col-xs-9 col-sm-9 col-md-10 col-lg-10 bgc">
-                            <p>分类标题</p>
-                            <h2><a href="#">文章标题</a></h2>
-                            <p>文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要</p>
-                            <ul>
-                                <li class="listImg"><img src="public/next/portfolio2_rollover.jpg"></li>
-                                <li class="listImg"><img src="public/next/portfolio2_rollover.jpg"></li>
-                                <li class="listImg"><img src="public/next/portfolio2_rollover.jpg"></li>
-                                <li class="listImg"><img src="public/next/portfolio2_rollover.jpg"></li>
-                            </ul>
-                            <ul class="clear">
-                                <li class="listBtn"><a href="#">点赞（0）</a></li>
-                                <li class="listBtn"><a href="#">评论（0）</a></li>
-                                <li class="listBtn"><a href="#">收藏（0）</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li class="liS">
-                    <div class="row">
-                        <div class="liL col-xs-3 col-sm-3 col-md-2 col-lg-2 bgc">
-                        <img src="public/next/portfolio3_rollover.jpg" class="img-circle">
-                        <p><a href="#">Username</a></p>
-                        
-                        <p><p><a href="#">积分：100</a></p>
-                        <p><a href="#">关注：100000</a></p>
-                        </div>
-                        <div class="liR col-xs-9 col-sm-9 col-md-10 col-lg-10 bgc">
-                        <p>分类标题</p>
-                        <h2><a href="#">文章标题</a></h2>
+                        <p class="badge listLabel"><a href="#">分类标题</a></p>
+                        <h2 class="listTit"><a href="#">文章标题</a></h2>
                         <p>文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要</p>
                         <ul>
                             <li class="listImg"><img src="public/next/portfolio2_rollover.jpg"></li>
@@ -163,7 +148,34 @@
                         </ul>
                         </div>
                     </div>
-                </li> 
+                </li>
+                <li class="liS">
+                    <div class="row">
+                        <div class="liL col-xs-3 col-sm-3 col-md-2 col-lg-2 bgc">
+                        <img src="public/next/portfolio3_rollover.jpg" class="img-circle">
+                        <p><a href="#">Username</a></p>
+                        
+                        <p><p><a href="#">积分：100</a></p>
+                        <p><a href="#">关注：100000</a></p>
+                        </div>
+                        <div class="liR col-xs-9 col-sm-9 col-md-10 col-lg-10 bgc">
+                        <p class="badge listLabel"><a href="#">分类标题</a></p>
+                        <h2 class="listTit"><a href="#">文章标题</a></h2>
+                        <p>文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要</p>
+                        <ul>
+                            <li class="listImg"><img src="public/next/portfolio2_rollover.jpg"></li>
+                            <li class="listImg"><img src="public/next/portfolio2_rollover.jpg"></li>
+                            <li class="listImg"><img src="public/next/portfolio2_rollover.jpg"></li>
+                            <li class="listImg"><img src="public/next/portfolio2_rollover.jpg"></li>
+                        </ul>
+                        <ul class="clear">
+                            <li class="listBtn"><a href="#">点赞（0）</a></li>
+                            <li class="listBtn"><a href="#">评论（0）</a></li>
+                            <li class="listBtn"><a href="#">收藏（0）</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                </li>
             </ul>
             <div class="container">
                 <nav>
@@ -196,12 +208,14 @@
                 <img src="public/next/portfolio9_rollover.jpg" class="img-thumbnail">
             </figure>
             <ul>
+                <h2>大家都在看的课堂</h2>
                 <li><a href="#">一些文字</a></li>
                 <li><a href="#">一些文字</a></li>
                 <li><a href="#">一些文字</a></li>
                 <li><a href="#">一些文字</a></li>
             </ul>
             <ul>
+                <h2>推荐课堂</h2>
                 <li><a href="#">一些文字</a></li>
                 <li><a href="#">一些文字</a></li>
                 <li><a href="#">一些文字</a></li>
@@ -259,5 +273,7 @@
 <script src="public/next/scroll.js"></script>
 <script src="public/next/slidingmenu.js"></script>
 <script src="public/next/script.js"></script>
-
+<!--nav btn  JS-->
+<script src="public/next/polyfills.js"></script>
+<script src="public/next/demo2.js"></script>
 </body></html>

@@ -39,6 +39,11 @@
 <link href="public/next/style.css" rel="stylesheet">
 <link type="text/css" media="screen" rel="stylesheet" href="public/next/awwwards.css">
 
+<!--logo Btn css-->
+<link rel="stylesheet" type="text/css" href="public/next/demo.css" />
+<link rel="stylesheet" type="text/css" href="public/next/component2.css" />
+<script src="public/next/modernizr-2.6.2.min.js"></script>
+
 <script src="public/next/modernizr.js"></script>
 <!--<script src="public/next/modernizr_003.js"></script>
 <script src="public/next/modernizr_002.js"></script>-->
@@ -46,7 +51,45 @@
 </head>
 
 <body style="overflow-y: auto;">
+<nav class="navbar  navbar-fixed-top navstyle">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand navTit" href="#">礼豆·亲子</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">首页</a></li>
+        <li class="navActive"><a href="#">课堂</a></li>
+        <li><a href="#">圈子</a></li>
+        <li><a href="#">攻略</a></li>
+        <li><a href="#">置换</a></li>
+        <li><a href="#">优惠</a></li>
+      </ul>
+</nav>
 
+<div id="logo" class="hidden-xs"><img alt="" title="" src="public/next/logo2x.png" height="125"  onclick="actNav()" >
+    <div class="component">
+        <button class="cn-button" id="cn-button">Menu</button>
+        <div class="cn-wrapper" id="cn-wrapper">
+            <ul>
+                <li><a href="#" class="wrapper-a6"><span>首页</span></a></li>
+                <li><a href="#" class="wrapper-a5"><span>课堂</span></a></li>
+                <li><a href="#" class="wrapper-a4"><span>圈子</span></a></li>
+                <li><a href="#" class="wrapper-a3"><span>攻略</span></a></li>
+                <li><a href="#" class="wrapper-a2"><span>置换</span></a></li>
+                <li><a href="#" class="wrapper-a1"><span>优惠</span></a></li>
+            </ul>
+        </div>
+        
+     </div>   
+</div>
 <div class="container">
 
   <!-- Nav tabs -->
@@ -115,5 +158,7 @@
 <script src="public/next/scroll.js"></script>
 <script src="public/next/slidingmenu.js"></script>
 <script src="public/next/script.js"></script>
-
+<!--nav btn  JS-->
+<script src="public/next/polyfills.js"></script>
+<script src="public/next/demo2.js"></script>
 </body></html>

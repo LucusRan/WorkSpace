@@ -276,7 +276,7 @@ p{
 /* ===================================*/
 #logo{
     position: fixed;
-    top: 50px;
+    top: 35%;
     right: 0px;
     z-index: 100;
 }
@@ -2890,19 +2890,33 @@ ul.foot-links li:hover{
     margin-left: 20px;
     width: 260px;
     height: 147px;
+    position: relative;
 }
 .videoList img{
     width: 260px;
     height: 147px;
-    z-index: 9;
 }
 .videoList a{
     width: 260px;
     height: 147px;
-    display: block;
-    background:#000;
-    z-index: 999;
 
+}
+.playIcon{
+    background: rgba(0,0,0,0.5);
+    background-image:url(icon_play.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    opacity: 0.4;
+
+    top: 0;
+    left: 0;
+}
+.playIcon:hover{
+    opacity: 0.8;
 }
 .newShare{
     width: 292px;
@@ -3049,93 +3063,44 @@ ul.foot-links li:hover{
     display: block;
     margin-bottom: 20px;
 }
-
-/* ====================================================*/
-/* Lucus coding      logo btn
-/* =====================================================*/
-.clear{
-    clear: both;
-}
-.actNavBtn{
-    width: 105px;
-    padding: 100px;
-    height: 125px !important;
-    display: block;
-    position: absolute;
-    top: -5px;
-    left: 0;
-    opacity: 0;
-    z-index: 9999;
-    
-}
-
-.actNav{
-    width: 50px;
-    height: 50px;
-    
-    border-radius: 50%;
-    text-align: center;
-    font-size: 10px;
-    line-height: 50px;
-    position: absolute;
-    opacity: 1;
-    z-index: 9;
- /*   -webkit-transition: all 0.6s ease-in-out;*/
-    
-}
-
-.actNavBox{
-    display: block;
-    width: 150px;
-    height: 150px;
-    position: fixed;
-    opacity: 1;
-    top: 45px;
-    right: -25px;
-
-    -webkit-transform-origin:top right; 
-    -webkit-transform:rotate(135deg);
-    -webkit-transition: all 0.8s ease-in-out;
-}
-.actNavBtn:checked +.actNavBox{
-    opacity: 1;
-    -webkit-transform:rotate(0deg);
-}
-#actNav1{
-    background: #f1533a;
-    top: 10px;
-    left:-60px;
-}
- #actNav2{
-    background:#91c839;
-    top: 65px;
-    left:-40px;
-}
-#actNav3{
-    background: #f58b51;
-    top: 115px;
-    left:-5px;
-}
- #actNav4{
-    background: #1888c8;
-    top: 140px;
-    left:60px;
-} 
-/* list page nav*/
-
 .serviceBtn{
     position: absolute;
     bottom: 20px;
     right: 20px;
 }
 
+.bgcolor1{
+    background: #f39300 !important;
+}
+.bgcolor2{
+    background: #18d4ff !important;
+}
+.bgcolor3{
+    background: #fff33f !important;
+}
+.bgcolor4{
+    background: #91c839 !important;
+}
 
+.wordColor1{
+    color: #ffffff !important;
+}
+.wordColor2{
+    color: #f39300 !important;
+}
+.wordbold{
+    font-weight: bold !important;
+}
+.welcome-text-one{
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 200;
+    color: #999;
+}
 
 /* ====================================================*/
 /* Lucus coding      List Page
 /* =====================================================*/
-
-
 
 .listPage a{    
     color: #000;
@@ -3160,10 +3125,22 @@ padding: 15px 15px 0 15px;
 }
 .liL img{
     width: 110%;
+    margin-bottom: 10px;
 
 }
-.liR{
-
+.listLabel{
+    background: #18d4ff;
+}
+.listLabel a{
+    color: #fff;
+}
+.listTit{
+    margin-bottom: 10px;
+}
+.listTit  a{
+    font-size: 14px;
+    color: #259;
+    font-weight: bold;
 }
 .listImg {
     width: 20%;
@@ -3190,7 +3167,11 @@ padding: 15px 15px 0 15px;
     border-bottom: 1px solid #ccc;
     padding:15px;
 }
-
+.rightInfo h2{
+    font-size: 14px;
+    font-weight: bold;
+    color: #259;
+}
 /* ====================================================*/
 /* Lucus coding      change Page
 /* =====================================================*/
@@ -3205,13 +3186,84 @@ padding: 15px 15px 0 15px;
     width: 160px;
     height: 180px;
     display: block;
+    margin-top: 20px;
 
+}
+.TCimg a{
+    color:#ccc;
 }
 
 /* ====================================================*/
 /* Lucus coding      content page
 /* =====================================================*/
-
+.navstyle{
+    background: #18d4ff;
+}
+.navstyle a{
+    color: #fff;
+}
+.navstyle a:hover{
+    background: rgba(0,195,239,0.6) !important;
+}
+.navTit{
+    font-weight: bold;
+    color: #fff;
+}
+.navActive{
+    background: #00c3ef;
+}
+.contentPage a{    
+    color: #000;
+    font-size: 13px;
+}
+.contentPage a:hover{
+    color:#2b76c5;
+}
+.contentPage{
+    padding-top: 20px;
+}
+.leftInfo{
+padding-right: 30px;
+}
+.leftInfo p{
+    margin-top: 10px;
+}
+.contentLabel li{
+    background: #18d4ff;
+    margin: 10px 0 10px 0;
+}
+.contentLabel li a{
+    color: #ffffff;
+}
+.contentTitle{
+    font-size: 18px;
+    display: inline;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.contentText{
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
 .CTBigImg{
     width: 100%;
+}
+.conBtn{
+    background: #18d4ff;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.Ouserface{
+    margin-top: -20px;
+}
+.Ouserface li{
+    float: left;
+    width: 20%;
+    margin-right:5px;
+    margin-top: 10px;
+}
+.Ouserface img{
+    width: 100%;
+    border-radius: 50%;
 }

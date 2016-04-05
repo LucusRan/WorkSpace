@@ -2962,7 +2962,11 @@ ul.foot-links li:hover{
     background-size: cover;
 }
     
-
+.testBtn{
+    position: absolute;
+    top: -40px;
+    right:20px;
+}
 #coupons-1{
     display: block;
 }
@@ -3067,8 +3071,28 @@ ul.foot-links li:hover{
     position: absolute;
     bottom: 20px;
     right: 20px;
-}
+    
 
+}
+/*修改bootstrap自带*/
+.btn{
+    border-radius: 0px !important;
+}
+.nav-tabs > li > a{
+    border-radius: 0px !important;
+    font-weight: bold;
+    color: #fff;
+}
+.nav-tabs > li.active > a {
+    background: #d35400 !important;
+    color: #fff !important;
+}
+.nav-tabs{
+    border-bottom: 2px solid #dddddd;
+}
+/*end*/
+
+/*强制转换的样式begin*/
 .bgcolor1{
     background: #f39300 !important;
 }
@@ -3091,6 +3115,8 @@ ul.foot-links li:hover{
 .wordbold{
     font-weight: bold !important;
 }
+/*强制转换的样式end*/
+
 .welcome-text-one{
     font-size: 14px;
     line-height: 30px;
@@ -3175,16 +3201,39 @@ padding: 15px 15px 0 15px;
 /* ====================================================*/
 /* Lucus coding      change Page
 /* =====================================================*/
+.carousel{
+    height: 500px;
+    margin-bottom: 60px;
+}
+.carousel .item{
+    height: 500px;
+    background: #ffffff;
+}
+.carousel .item img{
+    width: 100%;
+}
+.hotInfo{
+    margin-bottom: 35px;
+}
+.hotInfo h2{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+    font-family: 黑体;
+    color: #91c839;
+}
+
+}
 .TCimg{
     float: left;
-    margin-left: 20px;
+    padding-right: 10px;
     list-style: none;
     margin-top: 10px;
     text-align: center;
 }
 .TCimg img{
-    width: 160px;
-    height: 180px;
+    width: 100%;
+    height: auto;
     display: block;
     margin-top: 20px;
 
@@ -3196,22 +3245,7 @@ padding: 15px 15px 0 15px;
 /* ====================================================*/
 /* Lucus coding      content page
 /* =====================================================*/
-.navstyle{
-    background: #18d4ff;
-}
-.navstyle a{
-    color: #fff;
-}
-.navstyle a:hover{
-    background: rgba(0,195,239,0.6) !important;
-}
-.navTit{
-    font-weight: bold;
-    color: #fff;
-}
-.navActive{
-    background: #00c3ef;
-}
+
 .contentPage a{    
     color: #000;
     font-size: 13px;

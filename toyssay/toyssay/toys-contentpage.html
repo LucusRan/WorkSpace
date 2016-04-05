@@ -44,37 +44,139 @@
 <link rel="stylesheet" type="text/css" href="public/next/component2.css" />
 <script src="public/next/modernizr-2.6.2.min.js"></script>
 
+<link rel="stylesheet" type="text/css" href="public/next/sq-side-menu-other.css">
+
 <script src="public/next/modernizr.js"></script>
 <!--<script src="public/next/modernizr_003.js"></script>
 <script src="public/next/modernizr_002.js"></script>-->
 
 </head>
 
-<body style="padding-top: 50px;">
+<body style="overflow-y: auto;padding-top: 100px;">
+<div style="display: none;" id="preloader">
+  <div style="display: none;" id="status">&nbsp;</div>
+</div>
 
-<nav class="navbar  navbar-fixed-top navstyle">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand navTit" href="#">礼豆·亲子</a>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="#">首页</a></li>
-        <li class="navActive"><a href="#">课堂</a></li>
-        <li><a href="#">圈子</a></li>
-        <li><a href="#">攻略</a></li>
-        <li><a href="#">置换</a></li>
-        <li><a href="#">优惠</a></li>
-      </ul>
+
+
+<!-- Mobile Only Navigation - 2 types each for small device screens -->
+<!-- Sliding Navigation : starts -->
+<nav class="menu visible-xs" id="sm">
+  <div class="sm-wrap">
+    <h1 class="sm-logo">玩具说</h1>
+    <i class="icon-remove menu-close"></i>
+    <a class="scroll-link" data-soffset="0" href="#intro">首页</a>
+    <a class="scroll-link" data-soffset="0" href="#about">课堂</a>
+    <a class="scroll-link" data-soffset="0" href="#portfolio">圈子</a>
+    <a class="scroll-link" data-soffset="0" href="#services">攻略</a>
+    <a class="scroll-link" data-soffset="0" href="#contact">优惠</a>
+    <a class="scroll-link" data-soffset="0" href="#contact">活动</a>
+  </div>
+  <!-- Navigation Trigger Button -->
+  <div id="sm-trigger"></div>
 </nav>
+<!-- Sliding Navigation : ends -->
 
+
+
+
+
+
+<section id="mastwrap" class="sliding">
+ 
+
+<div id="sidebar-nav" class="sq-side-menu-other hidden-xs show-nav">
+    <ul>
+      <!-- Starting : Nav Block -->
+      <li style="height: 87.2857px;" class="next-bg-one">
+        <a class="scroll-link sq-active" id="home-link" href="#home" data-soffset="0">
+          <div class="first">
+            <div class="arrow-right"></div>
+            <div class="content"><img alt="" title="" src="public/next/002x.png" height="60" width="60"></div>
+          </div>
+          <div class="second">
+            <div class="arrow-left"></div>
+            <div class="content">首页</div>
+          </div>
+        </a>
+      </li>
+      <!-- Ending : Nav Block -->
+      
+      <!-- Starting : Nav Block -->
+      <li style="height: 87.2857px;" class="next-bg-two">
+         <a class="scroll-link" id="about-link" href="#about" data-soffset="0">
+          <div class="first">
+            <div class="arrow-right"></div>
+            <div class="content"><img alt="" title="" src="public/next/012x.png" height="60" width="60"></div>
+          </div>
+          <div class="second">
+            <div class="arrow-left"></div>
+            <div class="content">课堂</div>
+          </div>
+        </a>
+      </li>
+     <!-- Ending : Nav Block -->
+      
+      <!-- Starting : Nav Block -->
+      <li style="height: 87.2857px;" class="next-bg-four">
+        <a class="scroll-link" id="portfolio-link" href="#portfolio" data-soffset="0">
+          <div class="first">
+            <div class="arrow-right"></div>
+            <div class="content"><img alt="" title="" src="public/next/062x.png" height="60" width="60"></div>
+          </div>
+          <div class="second">
+            <div class="arrow-left"></div>
+            <div class="content">圈子</div>
+          </div>
+        </a>
+      </li>
+      <!-- Ending : Nav Block -->
+      
+      <!-- Starting : Nav Block -->
+      <li style="height: 87.2857px;" class="next-bg-three">
+        <a class="scroll-link" id="services-link" href="#services" data-soffset="0">
+          <div class="first">
+            <div class="arrow-right"></div>
+            <div class="content"><img alt="" title="" src="public/next/032x.png" height="60" width="60"></div>
+          </div>
+          <div class="second">
+            <div class="arrow-left"></div>
+            <div class="content">攻略</div>
+          </div>
+        </a>
+      </li>
+      <!-- Ending : Nav Block -->
+      
+      <!-- Starting : Nav Block -->
+      <li style="height: 87.2857px;" class="next-bg-six">
+       <a class="scroll-link" id="contact-link" href="#changing" data-soffset="0">
+          <div class="first">
+            <div class="arrow-right"></div>
+            <div class="content"><img alt="" title="" src="public/next/042x.png" height="60" width="60"></div>
+          </div>
+          <div class="second">
+            <div class="arrow-left"></div>
+            <div class="content">置换</div>
+          </div>
+        </a>
+      </li>
+      <!-- Ending : Nav Block -->    
+     <li style="height: 87.2857px;" class="next-bg-seven">
+       <a class="scroll-link" id="contact-link" href="#contact" data-soffset="0">
+          <div class="first">
+            <div class="arrow-right"></div>
+            <div class="content"><img alt="" title="" src="public/next/052x.png" height="60" width="60"></div>
+          </div>
+          <div class="second">
+            <div class="arrow-left"></div>
+            <div class="content">优惠</div>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <!-- end sq-side-menu ul -->
+  </div>
+  <!-- end sq-side-menu -->
 <div id="logo" class="hidden-xs"><img alt="" title="" src="public/next/logo2x.png" height="125"  onclick="actNav()" >
     <div class="component">
         <button class="cn-button" id="cn-button">Menu</button>

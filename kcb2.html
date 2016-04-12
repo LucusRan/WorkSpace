@@ -23,20 +23,35 @@
     font-family: "微软雅黑",Helvetica,sans-serif !important;
   }
   .list-danger{
-    background: rgba(255,0,0,.2);
+    background: rgba(194,193,104,1);
   }
   .list-active{
-    background: rgba(0,255,0,.2);
+    background: rgba(171,175,183,1);
   }
   .list-info{
-    background: rgba(0,0,255,.2);
+    background: rgba(242,139,77,1);
   }
+    .list-info1{
+    background: rgba(235,153,81,1);
+  }
+     .list-info2{
+    background: rgba(157,176,86,1);
+  }
+  .class-info li{
+    list-style-type: none;
+    margin-top: 5px;
+  }
+  .class-info-title{
+    font-weight: bold;
+  }
+  .class-info,
   .table-info{
     margin-left: 8%;
     margin-bottom: 15px;
   }
   .table-info li{
     list-style: none;
+    margin-top: 10px;
   }
   .bgcbox{
     height: 15px;
@@ -46,7 +61,7 @@
 
   }
   .timetable a{
-    color: #000000;
+    color: #FFF;
     width: 100%;
     height: 100%;
     display: block;
@@ -75,17 +90,26 @@
         
 
   <div class="content-block-title">
+    <ul class="class-info row">
+      <li class="col-50">总课时:<span class="class-info-title">120课时</span></li>
+      <li class="col-50">课次:<span class="class-info-title">60次</span></li>
+      <li class="col-50">已上课时:<span class="class-info-title">22课时</span></li>
+      <li class="col-50">剩余课时:<span class="class-info-title">98课时</span></li>
+    </ul>
     <ul class="table-info row">
-      <li class="col-33"><span class="bgcbox list-active">正常</span></li>
-      <li class="col-33"><span class="bgcbox list-danger">调整</span></li>
-      <li class="col-33"><span class="bgcbox list-info">补课</span></li>
+      
+  	  <li class="col-33"><span class="bgcbox list-info2">缺勤</span></li>
+  	  <li class="col-33"><span class="bgcbox list-danger">请假</span></li>
+  	  <li class="col-33"><span class="bgcbox list-info1">补课</span></li> 
+  	  <li class="col-33"><span class="bgcbox list-info">已上课</span></li>
+  	  <li class="col-33"><span class="bgcbox list-active">未上课</span></li>  
     </ul>
      
   </div>
 
   <ul class="timetable row no-gutter">
           
-          <li class="col-25 list-info">
+          <li class="col-25 list-info2">
             
               <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
               <h3>1</h3>
@@ -94,21 +118,21 @@
             
           </li>
           
-          <li class="col-25 list-active">
+          <li class="col-25 list-info">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
             <h3>2</h3>
             <p>1月1日</p>
             </a>
           </li>
 
-          <li class="col-25 list-danger">
+          <li class="col-25 list-info">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
             <h3>3</h3>
             <p>1月1日</p>
             </a>
           </li>
 
-          <li class="col-25 list-active">
+          <li class="col-25 list-info">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
             <h3>4</h3>
             <p>1月1日</p>
@@ -122,21 +146,21 @@
             </a>
           </li>
 
-          <li class="col-25 list-active">
+          <li class="col-25 list-info">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
             <h3>6</h3>
             <p>1月1日</p>
             </a>
           </li>
 
-          <li class="col-25 list-danger">
+          <li class="col-25 list-info">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
             <h3>7</h3>
             <p>1月1日</p>
             </a>
           </li>
 
-          <li class="col-25 list-active">
+          <li class="col-25 list-info">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
             <h3>8</h3>
             <p>1月1日</p>
@@ -150,7 +174,7 @@
             </a>
           </li>
 
-          <li class="col-25 list-active">
+          <li class="col-25 list-danger">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
             <h3>10</h3>
             <p>1月1日</p>
@@ -164,28 +188,28 @@
             </a>
           </li>
 
-          <li class="col-25 list-active">
+          <li class="col-25 list-danger">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
             <h3>12</h3>
             <p>1月1日</p>
             </a>
           </li>
 
-           <li class="col-25 list-info">
+           <li class="col-25 list-info1">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
             <h3>13</h3>
             <p>1月1日</p>
             </a>
           </li>
 
-          <li class="col-25 list-active">
+          <li class="col-25 list-info1">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
             <h3>14</h3>
             <p>1月1日</p>
             </a>
           </li>
 
-          <li class="col-25 list-danger">
+          <li class="col-25 list-info1">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
             <h3>15</h3>
             <p>1月1日</p>
@@ -281,197 +305,197 @@
             <p>1月1日</p>
             </a>
           </li>
-          <li class="col-25 list-info">
+          <li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>1</h3>
+            <h3>31</h3>
             <p>1月1日</p>
             </a>
           </li>
 
           <li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>2</h3>
-            <p>1月1日</p>
-            </a>
-          </li>
-
-          <li class="col-25 list-danger">
-            <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>3</h3>
+            <h3>32</h3>
             <p>1月1日</p>
             </a>
           </li>
 
           <li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>4</h3>
-            <p>1月1日</p>
-            </a>
-          </li>
-
-           <li class="col-25 list-info">
-            <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>5</h3>
+            <h3>33</h3>
             <p>1月1日</p>
             </a>
           </li>
 
           <li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>6</h3>
+            <h3>34</h3>
             <p>1月1日</p>
             </a>
           </li>
 
-          <li class="col-25 list-danger">
+           <li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>7</h3>
-            <p>1月1日</p>
-            </a>
-          </li>
-
-          <li class="col-25 list-active">
-            <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>8</h3>
-            <p>1月1日</p>
-            </a>
-          </li>
-
-          <li class="col-25 list-info">
-            <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>9</h3>
+            <h3>35</h3>
             <p>1月1日</p>
             </a>
           </li>
 
           <li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>10</h3>
-            <p>1月1日</p>
-            </a>
-          </li>
-
-          <li class="col-25 list-danger">
-            <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>11</h3>
+            <h3>36</h3>
             <p>1月1日</p>
             </a>
           </li>
 
           <li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>12</h3>
-            <p>1月1日</p>
-            </a>
-          </li>
-
-           <li class="col-25 list-info">
-            <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>13</h3>
+            <h3>37</h3>
             <p>1月1日</p>
             </a>
           </li>
 
           <li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>14</h3>
-            <p>1月1日</p>
-            </a>
-          </li>
-
-          <li class="col-25 list-danger">
-            <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>15</h3>
+            <h3>38</h3>
             <p>1月1日</p>
             </a>
           </li>
 
           <li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>16</h3>
+            <h3>39</h3>
+            <p>1月1日</p>
+            </a>
+          </li>
+
+          <li class="col-25 list-active">
+            <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
+            <h3>40</h3>
+            <p>1月1日</p>
+            </a>
+          </li>
+
+          <li class="col-25 list-active">
+            <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
+            <h3>41</h3>
+            <p>1月1日</p>
+            </a>
+          </li>
+
+          <li class="col-25 list-active">
+            <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
+            <h3>42</h3>
+            <p>1月1日</p>
+            </a>
+          </li>
+
+           <li class="col-25 list-active">
+            <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
+            <h3>43</h3>
+            <p>1月1日</p>
+            </a>
+          </li>
+
+          <li class="col-25 list-active">
+            <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
+            <h3>44</h3>
+            <p>1月1日</p>
+            </a>
+          </li>
+
+          <li class="col-25 list-active">
+            <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
+            <h3>45</h3>
+            <p>1月1日</p>
+            </a>
+          </li>
+
+          <li class="col-25 list-active">
+            <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
+            <h3>46</h3>
             <p>1月1日</p>
             </a>
           </li>
           
           <li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>17</h3>
+            <h3>47</h3>
             <p>1月1日</p>
             </a>
           </li>
           <li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>18</h3>
+            <h3>48</h3>
             <p>1月1日</p>
             </a>
           </li>
           <li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>19</h3>
+            <h3>49</h3>
             <p>1月1日</p>
             </a>
           </li>
           <li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>20</h3>
+            <h3>50</h3>
             <p>1月1日</p>
             </a>
           </li>
           <li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>21</h3>
+            <h3>51</h3>
             <p>1月1日</p>
             </a>
           </li>
           <li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>22</h3>
+            <h3>52</h3>
             <p>1月1日</p>
             </a>
           </li>
           <li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>23</h3>
+            <h3>53</h3>
             <p>1月1日</p>
             </a>
           </li>
           <li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>24</h3>
+            <h3>54</h3>
             <p>1月1日</p>
             </a>
           </li>
           <li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>25</h3>
+            <h3>55</h3>
             <p>1月1日</p>
             </a>
           </li>
           <li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>26</h3>
+            <h3>56</h3>
             <p>1月1日</p>
             </a>
           </li><li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>27</h3>
+            <h3>57</h3>
             <p>1月1日</p>
             </a>
           </li>
           <li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>28</h3>
+            <h3>58</h3>
             <p>1月1日</p>
             </a>
           </li><li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>29</h3>
+            <h3>59</h3>
             <p>1月1日</p>
             </a>
           </li>
           <li class="col-25 list-active">
             <a href="https://lucusran.github.io/WorkSpace/kechengbiao.html">
-            <h3>30</h3>
+            <h3>60</h3>
             <p>1月1日</p>
             </a>
           </li>

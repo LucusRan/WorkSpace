@@ -1,0 +1,128 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+
+}
+
+.mainBgc{
+    background-color: #a62a0e;
+}
+.navbar-default .navbar-brand ,
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus,
+ .navbar-default .navbar-nav>.active>a:hover{
+    color: #e0dccb;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{
+    background: #e3460f;
+}
+.btn{
+    border-radius: 0;
+    color: #e0dccb;
+}
+ .carousel-box{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+ }
+.carousel-box img{
+    width: 100%;
+    height: 600px;
+}
+.navbar{
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.nav-logo img{
+    width: 40px;
+    height: 40px;
+    margin-top: -10px;
+}
+/*header End*/
+
+.bottom,
+.page-head{
+    background-color: #e0dccb;
+}
+.head-title{
+    font-size: 100px;
+    font-family: 
+}
+.page-head,
+.page-section,
+.bottom,
+.page-spacer{
+    padding: 30px 0 30px 0;
+}
+.sticky{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+/*about Begin*/
+.head-title{
+    color: #fff;
+}
+.head-title span{
+    color: #a62a0e;
+}
+.bottom h4,
+.bottom p,
+.page-spacer p{
+    text-align: center;
+}
+.about-bottom-list li{
+   list-style: none;
+   float: left;
+   margin-left: 30px;
+   text-align: center;
+}
+/*about End*/
+
+/*activity Begin*/
+.activity-box{
+    height: 240px;
+    padding: 20px;
+    background-color: #e0dccb;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.activity-btn{
+    width: 150px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    left:75px;
+    bottom:40px;
+    color: #e0dccb;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+}
+.activity-bottom-btn{
+    width: 150px;
+
+}
+/*activity End*/
+/*teacher Begin*/
+.teacher-box{
+    height: 320px;
+    background: #e0dccb;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #a62a0e;
+}
+.teacher-box img{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+/*teacher End*/

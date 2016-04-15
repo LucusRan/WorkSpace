@@ -3,9 +3,11 @@
     margin:0;
 }
 body{
-
+background: #f7f5f2;
 }
-
+li{
+    list-style: none;
+}
 .mainBgc{
     background-color: #a62a0e;
 }
@@ -44,6 +46,37 @@ body{
     height: 40px;
     margin-top: -10px;
 }
+.carousel-indicators li{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    box-shadow: 0 1px 1px rgba(255,255,255,0.4),
+                inset 0 1px 1px rgba(0,0,0,0.1), 
+                0 0 0 2px rgba(255,255,255,0.5);
+    
+    background: rgba(150,150,150,0.1);
+
+}
+.carousel-indicators li:hover{
+    box-shadow: 0 1px 1px rgba(255,255,255,0.4), 
+                inset 0 1px 1px rgba(0,0,0,0.1), 
+                0 0 0 5px rgba(255,255,255,0.5);
+}
+.carousel-indicators .active{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    box-shadow: 0 1px 1px rgba(255,255,255,0.4), 
+                inset 0 1px 1px rgba(0,0,0,0.1), 
+                0 0 0 5px rgba(255,255,255,0.5);
+    background-color: transparent !important;
+    background-image:url(../img/dot.png);
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+
+}
 /*header End*/
 
 .bottom,
@@ -66,10 +99,19 @@ body{
     width: 100%;
     z-index: 999;
 }
-
+.page-head-bottom{
+    width: 0;
+    border-top: 20px solid #e0dccb;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
 /*about Begin*/
 .head-title{
     color: #fff;
+}
+.head-text span{
+    font-weight: bold;
+    font-size: 25px;
 }
 .head-title span{
     color: #a62a0e;
@@ -79,39 +121,115 @@ body{
 .page-spacer p{
     text-align: center;
 }
+.about-info{
+    line-height: 35px;
+}
+.about-info h4{
+    font-weight: bold;
+    font-size: 24px;
+}
 .about-bottom-list li{
-   list-style: none;
    float: left;
    margin-left: 30px;
    text-align: center;
 }
+
+.team-wrapper{
+    width: 50%;
+    height: 150px;
+    position: relative;
+    float: left;
+    background-color: #ebebeb;
+}
+.team-wrapper:hover > .avatar-left{
+    left: 50%;
+}
+.team-wrapper:hover > .avatar-right{
+    right: 50%;
+}
+.team-desc,
+.team-avatar{
+    width: 50%;
+    height: 100%;
+}
+.avatar-right{
+    right: 0;
+}
+.avatar-left{
+    left: 0;
+}
+.team-avatar{
+    position: absolute;
+    top: 0; 
+    overflow: hidden;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+.team-avatar img{
+    height: 100%;
+
+}
 /*about End*/
 
 /*activity Begin*/
-.activity-box{
-    height: 240px;
-    padding: 20px;
-    background-color: #e0dccb;
-    margin-left: 10px;
-    margin-bottom: 20px;
+#activity .carousel-inner .item{
+    height: 300px;
+    overflow: hidden;
+}
+
+#activity .carousel-inner .item img{
+    width: 40%;
+    height: auto;
+    float: left;
+}
+#activity .carousel{
+    margin-bottom: 50px;
+}
+.carousel-text{
+    float: left;
+    height: 100%;
+    width: 60%;
+    padding: 50px;
+    position: relative;
+    background: #e0dccb;
+}
+.text-left-icon{
+    position: absolute;
+    top: 40%;
+    left:-30px;
+    width: 0;
+    z-index: 999;
+    border-right: 30px solid #e0dccb;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+}
+.carousel-btn{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
 }
 .activity-btn{
     width: 150px;
     height: 30px;
     display: block;
-    position: absolute;
-    left:75px;
-    bottom:40px;
     color: #e0dccb;
     text-align: center;
     line-height: 30px;
     font-weight: bold;
+    margin: 0 auto;
 }
 .activity-bottom-btn{
     width: 150px;
 
 }
 /*activity End*/
+.course-box{
+    height: 240px;
+    padding: 20px;
+    background-color: #e0dccb;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
 /*teacher Begin*/
 .teacher-box{
     height: 320px;
@@ -119,10 +237,78 @@ body{
     text-align: center;
     margin-bottom: 20px;
     border-bottom: 5px solid #a62a0e;
+    overflow: hidden;
+    position: relative;
 }
-.teacher-box img{
+.teacher-box:hover >.teacher-box-info{
+    opacity: 1;
+}
+.teacher-box-info{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 200px;
-    overflow: hidden;
+    background-color: rgba(166,42,14,.4);
+    color: #e0dccb;
+    opacity: 0;
+    -webkit-transition: all 0.6s ease-in-out;
+}
+.teacher-box img{
+    width: auto;
+    height: 200px;
 }
 /*teacher End*/
+/*contact Begin*/
+.contact-info h2{
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+.contact-info span{
+    margin-right: 10px;
+}
+.contact-info{
+    line-height: 30px;
+}
+/*contact End*/
+/*footer Begin*/
+footer {
+    background: #000;
+    color: #fff;
+    line-height: 30px;
+}
+.footCatalog {
+    padding: 20px;
+    background-color: #333;
+    background-image: linear-gradient(to bottom, #353535 0px, #333 100%);
+    background-repeat: repeat-x;
+}
+footer .nav-group {
+    width: 15%;
+    float: left;
+}
+footer .copyright {
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+}
+footer .copyright .line:hover {
+    color: #ccc;
+}
+footer .copyright .footer-logo {
+    font-size: 36px;
+    margin: 10px;
+}
+footer a:visited {
+    color: #ccc;
+}
+footer a:hover {
+    color: #ccc;
+}
+footer a:link {
+    color: #666;
+}
+
+/*footer end*/

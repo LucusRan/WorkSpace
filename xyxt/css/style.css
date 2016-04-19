@@ -2,8 +2,10 @@
     padding:0;
     margin:0;
 }
+
 body{
 background: #f7f5f2;
+font-family: 微软雅黑;
 }
 li{
     list-style: none;
@@ -41,6 +43,11 @@ li{
     border-radius: 0;
     margin-bottom: 0;
 }
+.navbar-nav{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 微软雅黑;
+}
 .nav-logo img{
     width: 40px;
     height: 40px;
@@ -55,7 +62,7 @@ li{
                 0 0 0 2px rgba(255,255,255,0.5);
     
     background: rgba(150,150,150,0.1);
-
+    border:0px !important;
 }
 .carousel-indicators li:hover{
     box-shadow: 0 1px 1px rgba(255,255,255,0.4), 
@@ -71,7 +78,7 @@ li{
                 0 0 0 5px rgba(255,255,255,0.5);
     background-color: transparent !important;
     background-image:url(../img/dot.png);
-    background-size: 14px 14px;
+    background-size: 70% 70%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 
@@ -84,8 +91,8 @@ li{
     background-color: #e0dccb;
 }
 .head-title{
-    font-size: 100px;
-    font-family: 
+    font-size: 72px;
+
 }
 .page-head,
 .page-section,
@@ -128,10 +135,16 @@ li{
     font-weight: bold;
     font-size: 24px;
 }
+.about-bottom-title{
+    margin-top: 50px;
+    font-weight: bold;
+}
 .about-bottom-list li{
    float: left;
+   margin-top: 20px;
    margin-left: 30px;
    text-align: center;
+   margin-bottom: 30px;
 }
 
 .team-wrapper{
@@ -191,7 +204,7 @@ li{
     width: 60%;
     padding: 50px;
     position: relative;
-    background: #e0dccb;
+    background: #ebebeb;
 }
 .text-left-icon{
     position: absolute;
@@ -199,7 +212,7 @@ li{
     left:-30px;
     width: 0;
     z-index: 999;
-    border-right: 30px solid #e0dccb;
+    border-right: 30px solid #ebebeb;
     border-top: 30px solid transparent;
     border-bottom: 30px solid transparent;
 }
@@ -261,7 +274,7 @@ li{
 /*teacher End*/
 /*contact Begin*/
 .contact-info h2{
-    margin-top: 150px;
+    margin-top: 50px;
     margin-bottom: 30px;
 }
 .contact-info span{

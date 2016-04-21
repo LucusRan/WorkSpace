@@ -54,7 +54,7 @@ li{
     margin-top: -10px;
     float: left;
 }
-.carousel-indicators li{
+#header .carousel-indicators li{
     width: 20px;
     height: 20px;
     margin-left: 20px;
@@ -65,12 +65,12 @@ li{
     background: rgba(150,150,150,0.1);
     border:0px !important;
 }
-.carousel-indicators li:hover{
+#header .carousel-indicators li:hover{
     box-shadow: 0 1px 1px rgba(255,255,255,0.4), 
                 inset 0 1px 1px rgba(0,0,0,0.1), 
                 0 0 0 5px rgba(255,255,255,0.5);
 }
-.carousel-indicators .active{
+#header .carousel-indicators .active{
     width: 20px;
     height: 20px;
     margin-left: 20px;
@@ -207,14 +207,74 @@ li{
 /*about End*/
 
 /*activity Begin*/
+.carousel-indicators-1{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+    width: 40%;
+    margin-bottom: 0;
+}
+
+.carousel-indicators-1 li{
+    width: 33.3334%;
+    height: 100px;
+    display: block;
+    float: left;
+    border: 2px solid #fff;
+    margin:0 !important;
+    border-radius: 0 !important;
+    border:0 !important;
+    background-size: 100% 100% !important;
+}
+.carousel-indicators-img0{
+    background-image: url(../img/course8.jpg);
+}
+.carousel-indicators-img1{
+    background-image: url(../img/course7.png);
+}
+.carousel-indicators-img2{
+    background-image: url(../img/course6.png);
+}
+.carousel-indicators-1>li>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background:rgba(0,0,0,.6);
+    box-shadow:  0 0 0 4px #eee;
+
+}
+#carousel-example-generic1>.carousel-indicators{
+    margin:0 !important;
+    
+}
+#carousel-example-generic1>.carousel-indicators .active {
+    width: 33.3334%;
+    height: 100px;
+    display: block;
+    float: left;
+    margin-left:0 !important;
+    box-shadow:none !important;
+    background-color: transparent !important;
+    background-size: 100% 100% !important;
+    background-position: none !important;
+    border-radius: 0 !important;
+    border:0 !important;
+
+}
+.carousel-indicators-1 .active >a,
+.carousel-indicators-1>li>a:hover{
+    background:rgba(0,0,0,.1);
+}
 #activity .carousel-inner .item{
-    height: 300px;
+    height: 400px;
+    background: #eee;
     overflow: hidden;
 }
 
 #activity .carousel-inner .item img{
     width: 40%;
-    height: auto;
+    height:300px;
     float: left;
 }
 #activity .carousel{
@@ -241,7 +301,7 @@ li{
 .carousel-btn{
     position: absolute;
     bottom: 50px;
-    left: 50px;
+    right: 280px;
 }
 .activity-btn{
     width: 150px;
@@ -516,4 +576,82 @@ footer a:link {
     font-size: 20px;
     margin-top: 0;
     max-width: 100%;
+    box-shadow: 2px 5px 5px rgba(0,0,0,.2)
+}
+.teacher-content-titlename{
+    padding:10px 20px 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 0;
+    box-shadow: 2px 5px 5px rgba(0,0,0,.2);
+    margin-bottom: 30px;
+}
+.teacher-content-box{
+    min-height: 200px;
+    width: 100%;
+    display: block;
+    background-color: #eee;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+.teacher-content-box p{
+    margin-left: 30px;
+}
+
+
+/*================================================================================*/
+/*=============course-page=======================================================*/
+/*================================================================================*/
+.course-page-face{
+    height: 280px;
+    width: 400px;
+    overflow: hidden;
+    float: left;
+    background-color: #ebebeb;
+}
+.xyclass-list{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.xyclass-list li{
+    width: 180px;
+    margin-left: 10px;
+    float: left;
+    background-color: #a62a0e;
+    margin-top: 10px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+.xyclass-list li > a{
+    color: #fff;
+    font-weight: bold;
+}
+.course-page-header-icon{
+    width: 0;
+    height: 20px;
+    border-left: 40px solid #ebebeb;
+    border-bottom: 40px solid transparent;
+    border-top: 40px solid transparent;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+}
+.course-page-title{
+    float: left;
+    position: relative;
+    height: 280px;
+    background-color: #fff;
+    width: 740px;
+    position: relative;
+}
+.course-page-title h4{
+    padding:10px 20px 10px 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }

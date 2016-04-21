@@ -16,7 +16,7 @@
 
 </head>
 <body  data-spy="scroll" data-target="#navbar-example">
-<header>
+<header id="header">
     <section class="nav-container">
     <nav class="navbar navbar-default mainBgc navbar-inner" id="navbar-example" role="navigation">
   <div class="container">
@@ -28,7 +28,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand nav-logo" href="#"><img src="img/logo.png"></a>
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" class="nav-logo">
+       <img src="img/logo-bg.png" class="logo-name">
+      </a>
+       
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -50,7 +54,7 @@
 </section>
 </header>
 <content>
-     <div class="container">
+   <div class="container">
        <div class="teacher-page-header">
           <div class="teacher-page-face">
             <img src="img/teacher1.jpg">
@@ -65,21 +69,37 @@
           <div class="clearfix"></div>
        </div>
        <div class="teacher-content">
-        .
-        
+        <div class="teacher-content-box">
+          <h4 class="mainBgc teacher-content-titlename">擅长领域</h4>
+          <p>000000</p>
+          <p>000000</p>
+          <p>000000</p>
+          <p>000000</p>
+          <p>000000</p>
+
+        </div>
+        <div class="teacher-content-box">
+          <h4 class="mainBgc teacher-content-titlename">教学成果</h4>
+          <p>000000</p>
+          <p>000000</p>
+          <p>000000</p>
+          <p>000000</p>
+        </div>
+       
        </div>     
      </div>
 </content>
 <footer>
 <div class="col-md-12 clearfix footCatalog">
 <ul class="nav-group">
-<h4>产品</h4>
-<li><a href="/index/product" data-gta="event" data-category="out-footer" data-action="product overview">产品概览</a></li>
-<li><a href="/index/mobileTerminal" data-gta="event" data-category="out-footer" data-action="apps">移动版</a></li>
-<li><a href="/index/PCTerminal" data-gta="event" data-category="out-footer" data-action="business">PC版</a></li>
-<li><a href="/index/flatTerminal" data-gta="event" data-category="out-footer" data-action="support">平板版</a></li>
-<li><a href="/index/integratedMachine" data-gta="event" data-category="out-footer" data-action="updates">校区一体机</a></li>
-<li><a href="/index/privacyClause" data-gta="event" data-category="out-footer" data-action="privacy">隐私条款</a></li>
+<h4>课程</h4>
+<li><a href="/index/product" data-gta="event" data-category="out-footer" data-action="product overview">书法</a></li>
+<li><a href="/index/mobileTerminal" data-gta="event" data-category="out-footer" data-action="apps">国画</a></li>
+<li><a href="/index/PCTerminal" data-gta="event" data-category="out-footer" data-action="business">古筝</a></li>
+<li><a href="/index/flatTerminal" data-gta="event" data-category="out-footer" data-action="support">蒙学</a></li>
+<li><a href="/index/integratedMachine" data-gta="event" data-category="out-footer" data-action="updates">茶艺</a></li>
+<li><a href="/index/privacyClause" data-gta="event" data-category="out-footer" data-action="privacy">音乐启蒙</a></li>
+<li><a href="/index/privacyClause" data-gta="event" data-category="out-footer" data-action="privacy">文化游学</a></li>
 </ul>
 <ul class="nav-group">
 <h4>公司</h4>
@@ -88,21 +108,22 @@
 <a href="/index/partner" data-gta="event" data-category="out-footer" data-action="partners">合作伙伴</a></li>
 </ul>
 <ul class="nav-group">
-<h4>案例</h4>
-<li><a href="#" data-gta="event" data-category="out-footer" data-action="industry cases">行业案例</a></li>
-<li><a href="#" data-gta="event" data-category="out-footer" data-action="best practice">专题用例</a></li>
+<h4>市场</h4>
+<li><a href="#" data-gta="event" data-category="out-footer" data-action="industry cases">招生合作</a></li>
+<li><a href="#" data-gta="event" data-category="out-footer" data-action="best practice">教学合作</a></li>
+<li><a href="#" data-gta="event" data-category="out-footer" data-action="best practice">商务单</a></li>
 </ul>
 <ul class="nav-group">
 <h4>联系方式</h4>
-<li><a href="tel:00864008667708">+86 400-877-6608</a></li><li><span class="small">周一 至 周五 9:00 ~ 18:00</span></li>
-<li><a href="mailto:support@changingschool.com" data-gta="event" data-category="out-footer" data-action="send support email">support@changingschool.com</a></li>
+<li><a href="tel:0086 021-5018 8898">+86 021-5018 8898</a></li><li><span class="small">周一 至 周五 9:00 ~ 18:00</span></li>
+<li><a href="mailto:hr@xinyuexuetang.com" data-gta="event" data-category="out-footer" data-action="send support email">hr@xinyuexuetang.com</a></li>
 <li><a href="#" data-gta="event" data-category="out-footer" data-action="contact us">联系我们</a></li>
 </ul>
 </div>
 <div style="clear:both;"></div>
 <div class="copyright">
 <div class="footer-logo line">新月学堂 © </div>
-<div class="line">Copyright © 2015-2016 XiiiYuan 玺元（上海）教育科技有限公司 </div>
+<div class="line">Copyright © 2016 上海赑中教育科技有限公司 </div>
 <div><span class="line">沪ICP备15055944号</span></div>
 </div>
 </footer>
@@ -115,11 +136,13 @@
     // Do our DOM lookups beforehand
     var nav_container = $(".nav-container");
     var nav = $(".navbar-inner");
+    var logo_name=$(".logo-name");
 
     nav_container.waypoint({
         handler: function(event, direction) {
             nav.toggleClass('sticky', direction=='down');
-            
+            logo_name.toggleClass('logo-name-show');
+
             if (direction == 'down') nav_container.css({ 'height':nav.outerHeight() });
             else nav_container.css({ 'height':'auto' });
         },

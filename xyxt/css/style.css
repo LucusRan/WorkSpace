@@ -2,7 +2,10 @@
     padding:0;
     margin:0;
 }
-
+a:hover{
+    color: #ccc !important;
+    text-decoration: none;
+}
 body{
 background: #f7f5f2;
 font-family: 微软雅黑;
@@ -304,6 +307,22 @@ li{
     right: 280px;
 }
 .activity-btn{
+    width: 150px;
+    height: 30px;
+    display: block;
+    color: #e0dccb;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    margin: 0 auto;
+    
+}
+.activity-btn-abb{
+    position: absolute;
+    bottom: 50px;
+    left: 10%;
+}
+.activity-carousel-btn{
     width: 150px;
     height: 30px;
     display: block;

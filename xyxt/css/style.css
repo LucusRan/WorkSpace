@@ -561,7 +561,8 @@ footer a:link {
 .teacher-page-header{
     margin: 30px 0 30px 0;
     height: 280px;
-    overflow: hidden;
+    
+    position: relative;
 }
 
 .teacher-page-face{
@@ -601,9 +602,13 @@ footer a:link {
     padding:10px 20px 10px 20px;
     color: #fff;
     font-size: 20px;
-    margin-top: 0;
-    box-shadow: 2px 5px 5px rgba(0,0,0,.2);
-    margin-bottom: 30px;
+    max-width: 130px;
+    outline: 1px solid rgba(166,42,14,1);
+    outline-offset: 5px;
+    position: absolute;
+    top: -4px;
+    left: 6px;
+    
 }
 .teacher-content-box{
     min-height: 200px;
@@ -611,7 +616,9 @@ footer a:link {
     display: block;
     background-color: #eee;
     margin-bottom: 30px;
-    padding-bottom: 30px;
+    padding: 80px 5px 30px 0;
+    position: relative;
+
 }
 .teacher-content-box p{
     margin-left: 30px;
@@ -621,56 +628,17 @@ footer a:link {
 /*================================================================================*/
 /*=============course-page=======================================================*/
 /*================================================================================*/
-.course-page-face{
-    height: 280px;
-    width: 400px;
-    overflow: hidden;
-    float: left;
-    background-color: #ebebeb;
-}
-.xyclass-list{
-    margin-top: 10px;
-    margin-left: 5px;
-}
-.xyclass-list li{
-    width: 180px;
-    margin-left: 10px;
-    float: left;
-    background-color: #a62a0e;
-    margin-top: 10px;
-    padding: 10px 0 10px 0;
+
+.fixed-list{
+    position: fixed; 
+    top:0;
+    left:0;
+    background-color: #eee;
+    width: 150px;
     text-align: center;
+    padding:30px 0;
+    z-index: 99;
 }
-.xyclass-list li > a{
-    color: #fff;
-    font-weight: bold;
-}
-.course-page-header-icon{
-    width: 0;
-    height: 20px;
-    border-left: 40px solid #ebebeb;
-    border-bottom: 40px solid transparent;
-    border-top: 40px solid transparent;
-    position: absolute;
-    top: 100px;
-    left: 0px;
-}
-.course-page-title{
-    float: left;
-    position: relative;
-    height: 280px;
-    background-color: #fff;
-    width: 740px;
-    position: relative;
-}
-.course-page-title h4{
-    padding:10px 20px 10px 20px;
-    text-align: center;
-    color: #fff;
-    font-size: 20px;
-    margin: 0;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.class-list{
+    margin-bottom: 20px;
 }

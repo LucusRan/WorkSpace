@@ -16,6 +16,88 @@ li{
 .mainBgc{
     background-color: #a62a0e;
 }
+/*=================================*/
+/*==============悬浮窗=============*/
+/*=================================*/
+#floatPanels{
+    z-index:1000;position:fixed;top:30%;right:0px;
+    filter:alpha(opacity=40);
+    -moz-opacity:0.4;
+    opacity:0.4;
+    display: none;
+}
+#floatPanels:hover{
+    z-index:1000;position:fixed;top:30%;right:0px;
+    filter:alpha(opacity=100);
+    -moz-opacity:1;
+    opacity:1;
+}
+ul.panelTabs{
+}
+ul.panelTabs li{
+    padding:10px;   
+    margin:2px 0;
+    background:#99CCFF ;
+    color:#fff;
+    text-align:center;  
+}
+ul.panelTabs li.toggleContactPanel:hover{
+    background:#990000 ;
+    color:#ccc;
+}
+ul.panelTabs li.toggleBarcodePanel:hover{
+    background:#FFCC00 ;
+    color:#ccc;
+}
+ul.panelTabs li.toggleFeedbackPanel:hover{
+    background:#006699 ;
+    color:#ccc;
+}
+#gotoTop:hover{
+    background:#FFFF99 ;
+    color:#ccc;
+}
+
+ul.panelTabs li span{
+    width:100%; 
+    line-height:20px;
+}
+#floatPanels .panelInner{position:relative;}
+
+.contactPanel, .barcodePanel, .feedbackPanel{   
+    display:none;
+    position:absolute;
+    top:0;
+    left:-182px;
+    width:180px;
+    overflow:hidden;
+    padding-top:10px;
+    line-height:30px;
+    background:#99CCFF;
+    text-align:center;
+    min-height:175px;
+}
+.contactPanel a{
+    font-size: 10px;
+}
+.feedbackPanel{
+    text-align:left;
+    padding:10px;
+}
+.feedbackPanel input{
+    width:145px;
+}
+
+
+
+
+
+
+
+/*=================================*/
+/*================End==============*/
+/*=================================*/
+
 .navbar-default .navbar-brand ,
 .navbar-default .navbar-nav>li>a,
 .navbar-default .navbar-nav>.active>a, 
@@ -376,7 +458,12 @@ li{
     -webkit-transform:translate(0,-200px); /* Safari and Chrome */
     -o-transform:translate(0,-200px); /* Opera */
     transform:translate(0,-200px);
+
     -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 .teacher-box img{
     width: auto;
@@ -466,7 +553,12 @@ footer a:link {
   -webkit-transform:translate(100%,-300px); /* Safari and Chrome */
   -o-transform:translate(100%,-300px); /* Opera */
   transform:translate(100%,-300px);
-  -webkit-transition: all 0.4s ease-in-out;.
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   
 }
 

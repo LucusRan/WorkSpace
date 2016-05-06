@@ -17,6 +17,12 @@
 </head>
 <body  data-spy="scroll" data-target="#navbar-example">
 <header id="header">
+  <div class="top-logo">
+    <div class="container">
+      <img src="img/logored.png">
+      <img src="img/logowordred.png">
+    </div>
+  </div>
     <section class="nav-container">
     <nav class="navbar navbar-default mainBgc navbar-inner" id="navbar-example" role="navigation">
   <div class="container">
@@ -29,7 +35,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">
-        <img src="img/logo.png" class="nav-logo">
+        <img src="img/logo.png" class="top-nav-logo">
        <img src="img/logo-bg.png" class="logo-name">
       </a>
        
@@ -39,11 +45,11 @@
     
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav pull-right">
-            <li class="active"><a href="#about">学堂介绍</a></li>
-            <li><a href="#activity">学堂活动</a></li>
-            <li><a href="#course">课程介绍</a></li>
-            <li><a href="#teacher">学堂师资</a></li>
-            <li><a href="#contact">联系我们</a></li>
+            <li><a href="xy-index.html#about">学堂介绍</a></li>
+            <li><a href="xy-index.html#activity">学堂活动</a></li>
+            <li><a href="xy-index.html#course">课程介绍</a></li>
+            <li class="active"><a href="xy-index.html#teacher">学堂师资</a></li>
+            <li><a href="xy-index.html#contact">联系我们</a></li>
         
           </ul>
           
@@ -75,30 +81,20 @@
           <p>000000</p>
           <p>000000</p>
           <p>000000</p>
-          <p>000000</p>
-          <p>000000</p>
         </div>
-        <div class="row">
-          <div class="col-md-6">
+        
+          
+          
             <div class="teacher-content-box">
-              <h4 class="mainBgc teacher-content-titlename">荣誉证书</h4>
-              <p>000000</p>
-              <p>000000</p>
-              <p>000000</p>
-              <p>000000</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="teacher-content-box">
-              <h4 class="mainBgc teacher-content-titlename">带班情况</h4>
+              <h4 class="mainBgc teacher-content-titlename">课程安排</h4>
               <p>000000</p>
               <p>000000</p>
               <p>000000</p>
               <p>000000</p>
             </div>            
-          </div>
+          
 
-        </div>
+        
 
         <div class="teacher-content-box">
           <h4 class="mainBgc teacher-content-titlename">作品展示</h4>
@@ -107,8 +103,8 @@
           <p>000000</p>
           <p>000000</p>
         </div>
-       <div class="teacher-content-box">
-          <h4 class="mainBgc teacher-content-titlename">学生评论</h4>
+       <div class="teacher-content-box" style="display:none;">
+          <h4 class="mainBgc teacher-content-titlename">学生反馈</h4>
           <p>000000</p>
           <p>000000</p>
           <p>000000</p>
@@ -118,8 +114,9 @@
      </div>
 </content>
 <footer>
-<div class="col-md-12 clearfix footCatalog">
-<ul class="nav-group">
+<div class="col-md-12 clearfix footCatalog" style="z-index: 999;">
+<div class="container">
+  <ul class="nav-group">
 <h4>课程</h4>
 <li><a href="/index/product" data-gta="event" data-category="out-footer" data-action="product overview">书法</a></li>
 <li><a href="/index/mobileTerminal" data-gta="event" data-category="out-footer" data-action="apps">国画</a></li>
@@ -148,6 +145,8 @@
 <li><a href="#" data-gta="event" data-category="out-footer" data-action="contact us">联系我们</a></li>
 </ul>
 </div>
+
+</div>
 <div style="clear:both;"></div>
 <div class="copyright">
 <div class="footer-logo line">新月学堂 © </div>
@@ -165,12 +164,12 @@
     var nav_container = $(".nav-container");
     var nav = $(".navbar-inner");
     var logo_name=$(".logo-name");
-
+    var top_nav_logo = $(".top-nav-logo");
     nav_container.waypoint({
         handler: function(event, direction) {
             nav.toggleClass('sticky', direction=='down');
             logo_name.toggleClass('logo-name-show');
-
+            top_nav_logo.toggleClass('show');
             if (direction == 'down') nav_container.css({ 'height':nav.outerHeight() });
             else nav_container.css({ 'height':'auto' });
         },

@@ -139,6 +139,13 @@ ul.panelTabs li span{
     margin-top: -10px;
     float: left;
 }
+.top-nav-logo{
+    width: 40px;
+    height: 40px;
+    margin-top: -10px;
+    float: left;
+    display: none;
+}
 #header .carousel-indicators li{
     width: 20px;
     height: 20px;
@@ -313,7 +320,7 @@ ul.panelTabs li span{
     background-size: 100% 100% !important;
 }
 .carousel-indicators-img0{
-    background-image: url(../img/course8.jpg);
+    background-image: url(../img/activity1.png);
 }
 .carousel-indicators-img1{
     background-image: url(../img/course7.png);
@@ -714,27 +721,37 @@ footer a:link {
     margin-bottom: 30px;
     padding: 80px 5px 30px 0;
     position: relative;
-
 }
 .teacher-content-box p{
     margin-left: 30px;
 }
-
+.teacher-content-box img{
+    width:calc(100% - 30px);
+    margin:20px;
+}
 
 /*================================================================================*/
 /*=============course-page=======================================================*/
 /*================================================================================*/
-
+.top-logo{
+    height: 70px;
+    padding: 10px;
+}
+.top-logo img{
+    float: left;
+    height: 50px;
+}
 .fixed-list{
-    position: fixed; 
-    top:50px;
-    left:0;
-    /*background-color: #e0dccb;*/
     width: 200px;
     text-align: center;
     line-height: 50px;
     padding: 25px;
-    z-index: 99;
+    float: left;
+    padding-top: 0;
+}
+.teacher-content-right{
+    float:right;
+    width:calc(100% - 200px);
 }
 .class-list-title{
     background-color: #e0dccb;
@@ -781,11 +798,11 @@ footer a:link {
     background-repeat: no-repeat;     
     background-position:0% 100%, 100% 0%;
     opacity: 0.4;
-    -ms-transition:all 0.5s ease-in-out 0.3s;
-    -webkit-transition:all 0.5s ease-in-out 0.3s;
-    -moz-transition:all 0.5s ease-in-out 0.3s;
-    -o-transition:all 0.5s ease-in-out 0.3s;
-    transition:all 0.5s ease-in-out 0.3s;  
+    -ms-transition:all 0.5s ease-in-out;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;  
 }
 .class-list:hover   span{
     opacity: 0;
@@ -802,3 +819,15 @@ footer a:link {
 .class-list:hover a{
     color: #9e2e24;
 }
+
+/*================================================================================*/
+/*=============activity-page=======================================================*/
+/*================================================================================*/
+.activity-page-header{
+    margin: 10px 0 20px 0;
+    max-height: 300px;
+}
+.activity-page-header img{
+    width: 100%;
+}
+

@@ -75,9 +75,7 @@ ul.panelTabs li span{
     text-align:left;
     padding:10px;
 }
-.feedbackPanel input{
-    width:145px;
-}
+
 
 
 
@@ -319,10 +317,10 @@ ul.panelTabs li span{
     background-image: url(../img/activity1.png);
 }
 .carousel-indicators-img1{
-    background-image: url(../img/course7.png);
+    background-image: url(../img/activity02.jpg);
 }
 .carousel-indicators-img2{
-    background-image: url(../img/course6.png);
+    background-image: url(../img/activity03.png);
 }
 .carousel-indicators-1>li>a{
     width: 100%;
@@ -587,34 +585,40 @@ footer a:link {
     float: left;
 }
 .course-list-left1{
-    background-image: url(../img/course1.png);
+    background-image: url(../img/course/course1.png);
 }
 .course-list-left2{
-    background-image: url(../img/course2.png);
+    background-image: url(../img/course/course2.png);
 }
 .course-list-left3{
-    background-image: url(../img/course3.png);
+    background-image: url(../img/course/course3.png);
 }
 .course-list-left4{
-    background-image: url(../img/course4.png);
+    background-image: url(../img/course/course4.png);
 }
 .course-list-left5{
-    background-image: url(../img/course5.png);
+    background-image: url(../img/course/course5.png);
 }
 .course-list-left6{
-    background-image: url(../img/course6.png);
+    background-image: url(../img/course/course6.png);
 }
 .course-list-left7{
-    background-image: url(../img/course7.png);
+    background-image: url(../img/course/course7.png);
 }
 .course-list-left8{
-    background-image: url(../img/course8.jpg);
+    background-image: url(../img/course/course8.jpg);
 }
 .course-list-left9{
-    background-image: url(../img/course9.png);
+    background-image: url(../img/course/course9.png);
 }
 .course-list-left10{
-    background-image: url(../img/course10.png);
+    background-image: url(../img/course/course10.png);
+}
+.course-list-left11{
+    background-image: url(../img/course/course11.jpg);
+}
+.course-list-left12{
+    background-image: url(../img/course/course12.jpg);
 }
 
 .course-list-left{
@@ -743,6 +747,7 @@ footer a:link {
     float: left;
     height: 60px;
 }
+
 .hotline{
     color: #a62a0e;
     font-weight: 600;
@@ -754,6 +759,13 @@ footer a:link {
     padding: 25px;
     float: left;
     padding-top: 0;
+}
+.course-top-img{
+    width: 100%;
+    height: 240px;
+    background-image:url(../img/course/bg2.jpg); 
+    background-position: 20% 45%;
+    background-size: 100%;
 }
 .teacher-content-right{
     float:right;

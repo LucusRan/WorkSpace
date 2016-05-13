@@ -45,14 +45,28 @@
             <li><i class="fa fa-group"></i> 新月学堂期待你的加入：</li>
             <li>
               <span>姓名：</span>
-              <input type="text" id="feedback_title" name="feedback_title"><br>
+              <input type="text" id="feedback_title" name="feedback_title" class="form-control"><br>
               <span>电话：</span>
-              <input type="text" id="feedback_mobile" name="feedback_mobile"><br>
+              <input type="text" id="feedback_mobile" name="feedback_mobile" class="form-control"><br>
               <span>报名课程：</span><br>
-              <textarea id="feedback_content" name="feedback_content"></textarea>
+              <select class="form-control">
+                <option>请选择课程</option>
+                <option value="书法">书法</option>
+                <option value="国画">国画</option>
+                <option value="古筝">古筝</option>
+                <option value="创意美术">创意美术</option>
+                <option value="茶艺">茶艺</option>
+                <option value="花艺">花艺</option>
+                <option value="少儿音乐启蒙">少儿音乐启蒙</option>
+                <option value="文化游学">文化游学</option>
+                <option value="蒙学">蒙学</option>
+                <option value="成人国学">成人国学</option>
+                <option value="钢琴">钢琴</option>
+                <option value="二胡">二胡</option>
+              </select>
             </li>
             <li style="text-align:center;">
-              <button type="button" class="btn btn-default" onclick="add()">
+              <button type="button" class="btn btn-default form-control" onclick="add()" style="margin-top: 20px;">
                   <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 提交
               </button>
             </li>
@@ -254,7 +268,7 @@
                       </div>
                   </div>
                   <div class="item">
-                    <img src="img/course7.png" alt="...">
+                    <img src="img/activity02.jpg" alt="...">
                     <div class="carousel-text">
                         <div class="text-left-icon"></div>
                         <h4>活动名称</h4>
@@ -264,7 +278,7 @@
                       </div>
                   </div>
                   <div class="item">
-                    <img src="img/course6.png" alt="...">
+                    <img src="img/activity03.png" alt="...">
                     <div class="carousel-text">
                         <div class="text-left-icon"></div>
                         <h4>活动名称</h4>
@@ -354,7 +368,7 @@
                                 <div class="course-list-icon"></div>
                                 <div class="course-list-title"><h2 class="mainBgc">创意美术</h2></div>
                                 <div class="course-list-text">
-                                    <p>绘画是孩子的第二语言，我们提倡体验型绘画，启迪孩子起笔、构型等绘画基础，让孩子落笔生画，以情景式童话故事为导入，以韵语儿歌、故事续述等为导出，运用多元的生活材料，激发孩子探索的欲望和积极性 ，并在艺术创作中得到自我肯定和成就感。</p>
+                                    <p>脑洞大开，创意无限</p>
                                 </div>
                             </div>
                         </div>
@@ -434,7 +448,7 @@
                                 <div class="course-list-icon"></div>
                                 <div class="course-list-title"><h2 class="mainBgc">蒙学</h2></div>
                                 <div class="course-list-text">
-                                    <p> 教予孩子生活应对进退之道；帮助父母将家庭教育、学校教育、社会教育相结合，与家庭成员共同学习成长
+                                    <p> 蒙以养正，圣功也
 </p>
                                 </div>
                             </div>
@@ -452,6 +466,38 @@
                                 <div class="course-list-title"><h2 class="mainBgc">成人国学</h2></div>
                                 <div class="course-list-text">
                                     <p>让国学落地<br>用国学智慧解开幸福的密码</p>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="course-list">
+                            <div class="course-list-left course-list-left11">
+                            <div class="course-info">
+                            <a href="page/course/course11.html" class="activity-btn  mainBgc activity-btn-abb">课程详情</a>
+                            </div>
+                            </div>
+                            <div class="course-list-right">
+                                <div class="course-list-icon"></div>
+                                <div class="course-list-title"><h2 class="mainBgc">钢琴</h2></div>
+                                <div class="course-list-text">
+                                    <p>悦耳的音符在指尖乐动，<br>灵动的人生从琴键聆听</p>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="course-list">
+                            <div class="course-list-left course-list-left12">
+                            <div class="course-info">
+                            <a href="page/course/course12.html" class="activity-btn  mainBgc activity-btn-abb">课程详情</a>
+                            </div>
+                            </div>
+                            <div class="course-list-right">
+                                <div class="course-list-icon"></div>
+                                <div class="course-list-title"><h2 class="mainBgc">二胡</h2></div>
+                                <div class="course-list-text">
+                                    <p>一弓一弦<br>拉出人生百味，<br>千回百转<br>恰似风起云涌</p>
                                 </div>
                             </div>
                         </div>
@@ -485,8 +531,8 @@
                         <div class="teacher-box">
                             <div class="teacher-box-info">
                                     <span>
-                                        <h4>亲子课堂</h4>
-                                        <p>亲子课堂是新月学堂推出的特色活动</p>
+                                        
+                                        <p>教学，是一场快乐的分享会</p>
                                     </span>
                                     <a href="page/teacher/teacher01.html" class="activity-btn  mainBgc">名师介绍</a>
                                 </div>
@@ -499,8 +545,8 @@
                         <div class="teacher-box">
                             <div class="teacher-box-info">
                                     <span>
-                                        <h4>亲子课堂</h4>
-                                        <p>亲子课堂是新月学堂推出的特色活动</p>
+                                        
+                                        <p>书法——一场高尚经典的文化修行</p>
                                     </span>
                                     <a href="page/teacher/teacher02.html" class="activity-btn  mainBgc">名师介绍</a>
                                 </div>
@@ -513,8 +559,7 @@
                         <div class="teacher-box">
                             <div class="teacher-box-info">
                                     <span>
-                                        <h4>亲子课堂</h4>
-                                        <p>亲子课堂是新月学堂推出的特色活动</p>
+                                        <p>书法能带给你的，远比想象中更多</p>
                                     </span>
                                     <a href="page/teacher/teacher03.html" class="activity-btn  mainBgc">名师介绍</a>
                                 </div>
@@ -527,8 +572,8 @@
                         <div class="teacher-box">
                             <div class="teacher-box-info">
                                     <span>
-                                        <h4>亲子课堂</h4>
-                                        <p>亲子课堂是新月学堂推出的特色活动</p>
+                                        
+                                        <p> </p>
                                     </span>
                                     <a href="page/teacher/teacher04.html" class="activity-btn  mainBgc">名师介绍</a>
                                 </div>
@@ -541,8 +586,8 @@
                         <div class="teacher-box">
                             <div class="teacher-box-info">
                                     <span>
-                                        <h4>亲子课堂</h4>
-                                        <p>亲子课堂是新月学堂推出的特色活动</p>
+                                        
+                                        <p>解开幸福的密码</p>
                                     </span>
                                     <a href="page/teacher/teacher05.html" class="activity-btn  mainBgc">名师介绍</a>
                                 </div>
@@ -555,8 +600,7 @@
                         <div class="teacher-box">
                             <div class="teacher-box-info">
                                     <span>
-                                        <h4>亲子课堂</h4>
-                                        <p>亲子课堂是新月学堂推出的特色活动</p>
+                                        <p>享受音乐，享受生活</p>
                                     </span>
                                     <a href="page/teacher/teacher06.html" class="activity-btn  mainBgc">名师介绍</a>
                                 </div>
@@ -569,8 +613,7 @@
                         <div class="teacher-box">
                             <div class="teacher-box-info">
                                     <span>
-                                        <h4>亲子课堂</h4>
-                                        <p>亲子课堂是新月学堂推出的特色活动</p>
+                                        <p>践行！践行！践行！</p>
                                     </span>
                                     <a href="page/teacher/teacher07.html" class="activity-btn  mainBgc">名师介绍</a>
                                 </div>
@@ -583,8 +626,8 @@
                         <div class="teacher-box">
                             <div class="teacher-box-info">
                                     <span>
-                                        <h4>亲子课堂</h4>
-                                        <p>亲子课堂是新月学堂推出的特色活动</p>
+                                      
+                                        <p>双手打造自己的艺术世界</p>
                                     </span>
                                     <a href="page/teacher/teacher08.html" class="activity-btn  mainBgc">名师介绍</a>
                                 </div>
@@ -611,8 +654,8 @@
                         <div class="teacher-box">
                             <div class="teacher-box-info">
                                     <span>
-                                        <h4>亲子课堂</h4>
-                                        <p>亲子课堂是新月学堂推出的特色活动</p>
+                                        
+                                        <p> </p>
                                     </span>
                                     <a href="page/teacher/teacher10.html" class="activity-btn  mainBgc">名师介绍</a>
                                 </div>
@@ -625,8 +668,8 @@
                         <div class="teacher-box">
                             <div class="teacher-box-info">
                                     <span>
-                                        <h4>亲子课堂</h4>
-                                        <p>亲子课堂是新月学堂推出的特色活动</p>
+                                        
+                                        <p> </p>
                                     </span>
                                     <a href="page/teacher/teacher11.html" class="activity-btn  mainBgc">名师介绍</a>
                                 </div>

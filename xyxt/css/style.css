@@ -22,8 +22,8 @@ li{
 #floatPanels{
     z-index:1000;position:fixed;top:30%;right:0px;
     filter:alpha(opacity=40);
-    -moz-opacity:0.4;
-    opacity:0.4;
+    -moz-opacity:0.8;
+    opacity:0.8;
     display: none;
 }
 #floatPanels:hover{
@@ -37,24 +37,15 @@ ul.panelTabs{
 ul.panelTabs li{
     padding:10px;   
     margin:2px 0;
-    background:#99CCFF ;
+    background:#e0dccb ;
     color:#fff;
     text-align:center;  
 }
-ul.panelTabs li.toggleContactPanel:hover{
-    background:#990000 ;
-    color:#ccc;
-}
-ul.panelTabs li.toggleBarcodePanel:hover{
-    background:#FFCC00 ;
-    color:#ccc;
-}
-ul.panelTabs li.toggleFeedbackPanel:hover{
-    background:#006699 ;
-    color:#ccc;
-}
+ul.panelTabs li.toggleContactPanel:hover,
+ul.panelTabs li.toggleBarcodePanel:hover,
+ul.panelTabs li.toggleFeedbackPanel:hover,
 #gotoTop:hover{
-    background:#FFFF99 ;
+    background:#990000 ;
     color:#ccc;
 }
 
@@ -73,7 +64,7 @@ ul.panelTabs li span{
     overflow:hidden;
     padding-top:10px;
     line-height:30px;
-    background:#99CCFF;
+    background:#e0dccb;
     text-align:center;
     min-height:175px;
 }
@@ -278,6 +269,11 @@ ul.panelTabs li span{
 }
 .team-desc p{
     padding: 20px;
+    width: 20px;
+    font-size: 20px;
+    margin-right: 20px;
+    word-wrap:break-word;
+    letter-spacing: 20px;
 }
 .avatar-right{
     right: 0;
@@ -479,6 +475,7 @@ ul.panelTabs li span{
 .teacher-box-info span{
     min-height: 150px;
     display: block;
+    padding-top: 50px;
 }
 .teacher-box img{
     width: auto;
@@ -842,8 +839,26 @@ footer a:link {
     font-weight:600;
 }
 .course-title3{
-    color: #00e3e3;
+    color: #a62a0e !important;
     
+}
+.course5-table{
+    margin-left: 50px;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-collapse:collapse;
+}
+.course5-table td{
+            border-left: 2px solid #000;
+            border-top: 2px solid #000;
+            padding: 15px 50px;
+            text-align: left;
+            line-height: 25px;
+            color: #777; 
+            min-width: 160px;
+        }
+.course5-table span{
+    font-weight: 600;
 }
 /*================================================================================*/
 /*=============activity-page=======================================================*/

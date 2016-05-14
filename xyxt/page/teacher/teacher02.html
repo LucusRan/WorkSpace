@@ -16,6 +16,11 @@
 
 </head>
 <body  data-spy="scroll" data-target="#navbar-example">
+
+          <div id="imgFrame" onclick="CloseDiv()">
+            <div id="imgdispaly"></div>
+          </div>
+          
 <header id="header">
   <div class="top-logo">
     <div class="container">
@@ -109,7 +114,22 @@
 
         <div class="teacher-content-box">
           <h4 class="mainBgc teacher-content-titlename">作品展示</h4>
-        
+
+          <ul class="teacher-work-list">
+            <li>
+              <img src="../../img/teacher/teacher0201.jpg" onclick="ShowJPG(this)">
+            </li>
+            <li>
+              <img src="../../img/teacher/teacher0202.jpg" onclick="ShowJPG(this)">
+            </li>
+            <li>
+              <img src="../../img/teacher/teacher0203.jpg" onclick="ShowJPG(this)">
+            </li>
+          </ul>
+          <p class="course-title3">点击图片查看大图</p>
+            
+            
+            
         </div>
        <div class="teacher-content-box" style="display:none;">
           <h4 class="mainBgc teacher-content-titlename">学生反馈</h4>
@@ -164,6 +184,9 @@
     <div><span class="line">沪ICP备15055944号</span></div>
   </div>
 </footer>
+
+
+
     <script src="../../js/jquery.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
     <script src="../../js/waypoints.js"></script>
@@ -186,6 +209,18 @@
         offset: 15
     }); 
 });
+
+        function ShowJPG(img){
+
+          $('#imgFrame').css("display","block");
+          $('#imgdispaly').css("display","block");
+           document.getElementById("imgdispaly").innerHTML = "<img src='" + img.getAttribute("src") + "'>"; 
+        };
+        function CloseDiv(){
+
+          $('#imgFrame').css("display","none");
+          $('#imgdispaly').css("display","none");
+        };
     </script>
     
 </body>

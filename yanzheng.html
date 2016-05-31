@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>课程表列表页</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+
+
+
+  <style>
+  .GetNum{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2.4rem;
+    border-radius: 0;
+    line-height: 2.4rem !important;
+    width: 4.5rem;
+  }
+  .UNclick{
+    background: #999 !important;
+    cursor: not-allowed;
+  }
+.img-box{
+  text-align: center;
+    background: #0894ec;
+    padding: 3rem 0 1rem 0;
+}
+.message-box{
+  margin-left:1rem;
+  font-family: 微软雅黑;
+  line-height:1rem;
+}
+
+</style>
+
+  </head>
+  <body>
+<div class="page-group">
+    <div class="page">
+     
+        <div class="content">
+        <div class="img-box">
+          <img src="wx_logo.png" alt="">
+          <h3>轻轻学堂UIS系统</h3>
+        </div>
+        
+        <div class="message-box">
+          <h4 style="margin-bottom: 0;">登录后该应用将获得以下权限</h4>
+          <p class="color-gray"><input type="checkbox" checked="" disabled="true">
+          获得你的公开信息（昵称、头像等）</ps>
+        </div>
+        
+        
+          <div class="list-block">
+    <ul>
+      <!-- Text inputs -->
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="icon icon-form-name"></i></div>
+          <div class="item-inner">
+            <div class="item-title label">手机号</div>
+            <div class="item-input">
+              <input type="text" placeholder="在此填写手机号">
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-media"><i class="icon icon-form-email"></i></div>
+          <div class="item-inner">
+            <div class="item-title label">验证码</div>
+            <div class="item-input">
+              <input type="email" placeholder="在此填写验证码">
+              <a class="button button-fill button-info GetNum" onclick="GetNumClick()">获取验证码</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  <div class="content-block">
+    <div class="row">
+
+      <div class="col-100"><a href="#" class="button button-big button-fill button-info">提交</a></div>
+    </div>
+  </div>
+</div>
+        </div>    
+
+
+    </div>
+</div>
+
+    <script type='text/javascript' src='https://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+<!-- 默认必须要执行$.init(),实际业务里一般不会在HTML文档里执行，通常是在业务页面代码的最后执行 -->
+    <script>$.init();
+
+function GetNumClick(){
+clearInterval(timer);  
+    timer(intDiff);
+     $('.GetNum').addClass('UNclick');
+}
+var intDiff = parseInt(60);//倒计时总秒数量
+function timer(intDiff){
+
+    window.setInterval(function(){
+    var second=0;//时间默认值        
+    if(intDiff > 0){
+        second = intDiff;
+    }
+    if (second <= 9) second = '0' + second;
+    $('.GetNum').html(second+'秒');
+    intDiff--;
+    }, 1000);
+} 
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程表</title>
+
+<style>
+    *{
+        margin: 0;
+        padding:0;
+    }
+    html{
+        font: 100%;
+        font-family: 微软雅黑;
+    }
+    .timetable{
+        width: 60em;
+        min-height: 10em;
+        margin: 0 auto;
+    }
+    .timetable-header{
+        width: 100%;
+        text-align: center;
+    }
+     .timetable-title{
+        height: 2em;
+        background: #1a93d7;
+        color: #fff;
+        font-size: 1.5em;
+        line-height: 2em;
+        font-weight: 600;
+     }
+     .timetable-body{
+        width: 100%;
+        min-height: 10em;
+        background: #eee;
+     }
+    li{
+        list-style-type: none;   
+    }
+    .listStyle li{
+        width: 6.666em;
+        float: left;
+        text-align: center;
+        background: #327ab7;
+        height: 3em;
+        line-height: 2em;
+        position: relative;
+        color:#fff;
+    }
+    .listStyle li::before{
+            content: " ";
+    border: 0.75em solid transparent;
+    border-bottom: .175em solid #eee;
+    border-left: 3em solid #eee;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    }
+    .listStyle li:after{
+        content: " ";
+    border: 0.75em solid transparent;
+    border-bottom: .175em solid #eee;
+    border-right: 3em solid #eee;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="timetable">
+            <div class="timetable-header">
+                <div class="timetable-title">
+                    课程表
+                </div>
+            </div>
+            <div class="timetable-body">
+                <ul class="listStyle">
+                    <li>
+                        星期一
+                    </li>
+                    <li>
+                        星期一
+                    </li>
+                    <li>
+                        星期一
+                    </li>
+                    <li>
+                        星期一
+                    </li>
+                    <li>
+                        星期一
+                    </li>
+                    <li>
+                        星期一
+                    </li>
+                    <li>
+                        星期一
+                    </li>
+                    <li>
+                        星期一
+                    </li>
+                    <li>
+                        星期一
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

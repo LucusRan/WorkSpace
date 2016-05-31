@@ -1,0 +1,164 @@
+ html {
+    -ms-touch-action: none;  /* 阻止windows Phone 的默认触摸事件 */
+    }
+    body,
+    div,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        list-style: none;
+    }
+    body {
+        width: 100%;
+        *cursor: default;
+        overflow: hidden;
+        font: 16px/1.5 "Microsoft YaHei",Helvetica,STHeiti STXihei,Microsoft JhengHei,Arial;
+    }
+    #pageContain {
+        overflow: hidden;
+    }
+    .page {
+        display: none;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .contain {
+        width: 100%;
+        height: 100%;
+        display: none;
+        position: relative;
+        z-index: 0;
+    }
+    .current .contain,.slide .contain {
+        display: block;
+    }
+    .current {
+        display: block;
+        z-index: 1;
+    }
+    .slide {
+        display: block;
+        z-index: 2;
+    }
+    .swipe {
+        display: block;
+        z-index: 3;
+        transition-duration: 0ms !important;
+        -webkit-transition-duration: 0ms !important;
+    }
+    .page1 {
+         background: linear-gradient(
+                #64ccfc,#3e8ff2);
+    }
+    .page2 {
+        background: linear-gradient(
+               #6fedd1,#4abfb7);
+    }
+    .page3 {
+         background: linear-gradient(
+               #f38e65,#f2686d);
+    }
+    .page4 {
+         background: linear-gradient(
+                #fecd70,#ec8d2c);
+    }
+    .page5 {
+        background: #00ff00;
+    }
+    .page6 {
+        background: #22ffff;
+    }
+    p {
+        width: 200px;
+        height: 100px;
+        color:#fff;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -100px;
+        margin-top: -50px;
+        opacity: 1;
+        transition: all .8s ease;
+        transform-origin: 50% 50%;
+    }
+
+
+    
+    .step1 p {
+        transform: translate(0, -50px);
+        -webkit-transform: translate(0, -50px);
+    }
+    .step2 p {
+        opacity: 0;
+        transform: scale(2);
+        -webkit-transform: scale(2);
+    }
+    .step3 p {
+        transform: scale(1);
+        -webkit-transform: scale(1)
+        opacity: 1;
+    }
+    .step4 p {
+        -webkit-transform: rotate(360deg) translate(0,-200px) scale(.3);
+        transform: rotate(360deg) translate(0,-200px) scale(.3);
+        opacity: 0;
+    }
+    .step1 .FromRollLeft,
+    .step1 .FromRollRight{
+        -webkit-transform: rotate(0deg) translate(0,0px) scale(1);
+        transform: rotate(0deg) translate(0,0px) scale(1);
+        opacity: 1;
+    }
+    .step2 .FromRollLeft,
+    .step2 .FromRollRight{
+        -webkit-transform: rotate(0deg) translate(0,0px) scale(1.2);
+        transform: rotate(0deg) translate(0,0px) scale(1.2);
+        opacity: .8;
+    }
+    .step3 .FromRollLeft,
+    .step3 .FromRollRight{
+        -webkit-transform: rotate(0deg) translate(0,0px) scale(0);
+        transform: rotate(0deg) translate(0,0px) scale(0);
+        opacity: 0;
+    }
+    .FromRollLeft,
+    .FromRollRight{
+        opacity:0;
+        transition: all .8s ease;
+    }
+    .FromRollLeft{
+        -webkit-transform: rotate(-100deg) translate(0,-200px) scale(.3);
+        transform: rotate(-100deg) translate(0,-200px) scale(.3);
+    }
+    .FromRollRight{
+        -webkit-transform: rotate(100deg) translate(0,-200px) scale(.3);
+        transform: rotate(100deg) translate(0,-200px) scale(.3);
+    }
+
+
+
+
+    .con-img{
+        width: 35vw;
+        margin-top: 10vh;    
+    }   
+    .con-img img{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .left{
+        float: left;
+        margin-left: 8vw;
+    }
+    .right{
+        float: right;
+        margin-right: 8vw;
+    }
+    

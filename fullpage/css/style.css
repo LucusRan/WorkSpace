@@ -38,7 +38,18 @@
         border-left: 20px solid #FFF;
         animation: AlwaysRoll 0.8s infinite;
     }
+    #Loading:after{
+        content: "精彩即将呈现";
+        position: absolute;
+        left: calc(50vw - 50px);
+        top: calc(50vh + 20px);
+        color: #fff;
+
+    }
     @keyframes AlwaysRoll{
+        from{transform:rotate(360deg)}
+    }
+    -webkit-@keyframes AlwaysRoll{
         from{transform:rotate(360deg)}
     }
     #pageContain {
@@ -113,6 +124,59 @@
         transition: all .8s ease;
         transform-origin: 50% 50%;
     }
+    .page-title{
+        color: #fff;
+        position: absolute;
+        left: calc(50vw - 130px);
+        top: calc(30vh +  100px);
+        font-size: 15px;
+        text-align: center;
+    }
+    .page-title h1{
+        animation: FromLeftRollWord 2s;
+    }
+    .page-title h2{
+        animation:FromRightRollWord 2s;
+    }
+    .index-img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        left: calc(50vw - 100px);
+        top: calc(30vh - 100px);
+        animation:FromRollBall 1.5s;
+    }
+    .index-img img{ 
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+    }
+    @keyframes FromRollBall{
+        from{
+            transform:translateX(300px) rotate(360deg);
+        }
+    }
+     -webkit-@keyframes FromRollBall{
+        from{
+            transform:translateX(300px) rotate(360deg);
+        }
+    }
+     @keyframes FromLeftRollWord{
+        from{
+            transform:translateX(-400px);
+        }
+     }
+     @keyframes FromRightRollWord{
+        from{
+            transform:translateX(400px);
+        }
+     }
+    
+
+
+
+
 
 
     

@@ -14,6 +14,19 @@
 <body onload="CloseLoading()"> 
 <!--<![endif]-->
 <div id="Loading"></div>
+<div id="music" class="onaudio" onclick="AuOnOff()">
+<audio src="mp3/1.mp3" autoplay="autoplay" loop="loop" id="aud">
+</audio>
+</div>
+
+<div style="
+    z-index: 9;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    display: block;
+    position: fixed;
+"></div>
 	<div id="pageContain">
 		
 		<div class="page page1 current" data-step="1">
@@ -49,7 +62,7 @@
 
 		<div class="page page3" data-step="4">
 			<div class="contain">
-				<p class="demo-data-step">data-step可以让你在不切屏的情况下更换动画</p>
+				<p class="demo-data-step">分4部展示的动画文字</p>
 			</div>
 		</div>
 
@@ -77,6 +90,18 @@
 <script type="text/javascript">
 function CloseLoading(){
     document.getElementById("Loading").style.display="none";
+}
+function AuOnOff(){
+var music = document.getElementById('music');
+var aud = document.getElementById('aud');
+   if(music.className == 'offaudio')
+   {
+    music.className ='onaudio';
+    aud.play();
+   }else{
+    music.className ='offaudio';
+    aud.pause();
+    }
 }
 var runPage;
 

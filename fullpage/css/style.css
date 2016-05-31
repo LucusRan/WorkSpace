@@ -10,7 +10,8 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
 从右侧滚入。
 ============================================================
 ===================== 自动播放动画  ======================== 
-
+.FromLeftRollWord：2s 从左侧滑入。
+.FromRightRollWord：2s 从右侧滑入。
 ============================================================
  */
 
@@ -70,6 +71,28 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
     -webkit-@keyframes AlwaysRoll{
         from{transform:rotate(360deg)}
     }
+    #music{
+        z-index: 9;
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        padding: 10px;
+        background-size: 40px 40px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    .onaudio{
+        background: url(../img/onaudio.jpg);
+        
+    }
+    .offaudio{
+        background: url(../img/offaudio.jpg);
+    }
+
+
+
     #pageContain {
         overflow: hidden;
     }
@@ -261,8 +284,8 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
 
 
     .con-img{
-        width: 30vw;
-        height: 30vw;
+        width: 125px;
+        height: 125px;
         margin-top: 10vh;    
     }   
     .con-img img{

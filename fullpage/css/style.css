@@ -286,7 +286,8 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
     .con-img{
         width: 125px;
         height: 125px;
-        margin-top: 10vh;    
+        margin-top: 10vh;
+        margin-top: 100px;     
     }   
     .con-img img{
         width: 100%;
@@ -295,9 +296,11 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
     .left{
         float: left;
         margin-left: 8vw;
+        margin-left: 80px;
     }
     .right{
         float: right;
         margin-right: 8vw;
+        margin-right: 80px;
     }
     

@@ -13,6 +13,7 @@
 <!--[if gt IE 7]><!--> 
 <body onload="CloseLoading()"> 
 <!--<![endif]-->
+<div id="Loading"></div>
 	<div id="pageContain">
 		
 		<div class="page page1 current">
@@ -67,6 +68,7 @@
 <script type="text/javascript" src="js/fullPage.min.js"></script>
 <script type="text/javascript">
 function CloseLoading(){
+    document.getElementById("Loading").style.display="none";
 }
 var runPage;
 

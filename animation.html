@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>轻轻学堂-签到页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<style>
+*{
+    padding: 0;
+    margin:0;
+}
+    #Loading{
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: #666;
+        position: fixed;
+        z-index: 9999;
+    }
+    #Loading:before{
+        content: " ";
+        width: 100px;
+        height: 100px;
+        display: block;
+        background: rgba(255,255,255,.0);
+        position: absolute;
+        left: calc(50vw - 70px);
+        top: calc(50vh - 140px);
+        border-radius: 50%;
+        border: 20px solid rgba(255,255,255,.2);
+        border-left: 20px solid #FFF;
+        animation: AlwaysRoll 0.8s infinite;
+    }
+    #Loading:after{
+        content: "轻轻学堂-精彩即将呈现";
+        position: absolute;
+        left: calc(50vw - 85px);
+        top: calc(50vh + 20px);
+        color: #fff;
+
+    }
+    @keyframes AlwaysRoll{
+        from{transform:rotate(360deg)}
+    }
+    -webkit-@keyframes AlwaysRoll{
+        from{transform:rotate(360deg)}
+    }
+    .page{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+                #64ccfc,#3e8ff2);
+    }
+    #CheckIn{
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        margin-left: -35px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        background: #6CEFB3;
+        border: 0;
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+        font-family: 微软雅黑;
+    }
+
+    #pointsAdd{
+        display: none;
+        animation:PointsAdd 2.6s;
+    }
+    @keyframes PointsAdd{
+        80%{opacity: 1;}
+        100%{opacity: 0;}
+    }
+    #pointsAdd1{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        margin-left: -50px;
+        margin-top: 50px;
+        width: 100px;
+        height: 50px;
+        padding: 10px;
+        animation:PointsAdd1 2.6s;
+        opacity: 0;
+    }
+    #pointsAdd1 h1{
+        color: #fff;
+    }
+    @keyframes PointsAdd1{
+        0%{transform:scale(.5);}
+        35%{transform:scale(1);}
+        40%{transform:scale(1);}
+        60%{transform:translateY(-200px);opacity: 1;}
+        80%{opacity: 0;transform:translateY(-200px);}
+    }
+    #pointsAdd2{
+        transform:rotate(180deg);
+        width: 100%;
+    }
+    #pointsAdd2 img{
+        width: 46vw;
+        margin-left: 27vw;
+        margin-bottom:0px;
+        animation:PointsAdd2 2.6s;
+    }
+     @keyframes PointsAdd2{
+       0%{transform:translateY(200px)}
+       50%{transform:translateY(0px)}
+       80%{transform:translateY(0px)}
+    }
+</style>
+</head>
+<!--[if lte IE 7]>      
+<body scroll="no"> 
+<![endif]-->
+<!--[if gt IE 7]><!--> 
+<body onload="CloseLoading()"> 
+<!--<![endif]-->
+<div id="Loading"></div>
+
+
+
+<section class="page">
+    <button id="CheckIn">BIU</button>
+
+    <div id="pointsAdd">
+        <div id="pointsAdd1">
+            <h1>+2积分</h1>
+        </div>
+        <div id="pointsAdd2">
+            <img src="1.png">
+        </div>
+    </div>
+</section>
+
+
+
+<script type="text/javascript">
+function CloseLoading(){
+    document.getElementById("Loading").style.display="none";
+}
+
+document.getElementById('CheckIn').onclick = function(){
+    var pointsAdd = document.getElementById('pointsAdd');
+    pointsAdd.style.display="block";
+    pointsAdd.addEventListener("webkitAnimationEnd",function(){
+        pointsAdd.style.display="none";
+    },false);
+
+}
+
+</script>
+</body>
+</html>

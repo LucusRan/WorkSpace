@@ -286,7 +286,11 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
     .con-img{
         width: 125px;
         height: 125px;
+<<<<<<< HEAD
         margin-top: 10vh;    
+=======
+        margin-top: 8vh;
+>>>>>>> origin/gh-pages
     }   
     .con-img img{
         width: 100%;
@@ -299,6 +303,9 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
     .right{
         float: right;
         margin-right: 8vw;
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/gh-pages
     }
     

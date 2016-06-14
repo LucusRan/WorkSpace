@@ -46,6 +46,15 @@
     -webkit-@keyframes AlwaysRoll{
         from{transform:rotate(360deg)}
     }
+    -moz-@keyframes AlwaysRoll{
+        from{transform:rotate(360deg)}
+    }
+    -ms-@keyframes AlwaysRoll{
+        from{transform:rotate(360deg)}
+    }
+    -o-@keyframes AlwaysRoll{
+        from{transform:rotate(360deg)}
+    }
     .page{
     display: block;
     width: 100%;
@@ -84,6 +93,18 @@
         80%{opacity: 1;}
         100%{opacity: 0;}
     }
+     -moz-@keyframes PointsAdd{
+        80%{opacity: 1;}
+        100%{opacity: 0;}
+    }
+     -ms-@keyframes PointsAdd{
+        80%{opacity: 1;}
+        100%{opacity: 0;}
+    }
+     -o-@keyframes PointsAdd{
+        80%{opacity: 1;}
+        100%{opacity: 0;}
+    }
     #pointsAdd1{
         position: absolute;
         top: 40%;
@@ -113,8 +134,33 @@
         60%{transform:translateY(-200px);opacity: 1;}
         80%{opacity: 0;transform:translateY(-200px);}
     }
+    -moz-@keyframes PointsAdd1{
+        0%{transform:scale(.5);}
+        35%{transform:scale(1);}
+        40%{transform:scale(1);}
+        60%{transform:translateY(-200px);opacity: 1;}
+        80%{opacity: 0;transform:translateY(-200px);}
+    }
+    -ms-@keyframes PointsAdd1{
+        0%{transform:scale(.5);}
+        35%{transform:scale(1);}
+        40%{transform:scale(1);}
+        60%{transform:translateY(-200px);opacity: 1;}
+        80%{opacity: 0;transform:translateY(-200px);}
+    }
+    -o-@keyframes PointsAdd1{
+        0%{transform:scale(.5);}
+        35%{transform:scale(1);}
+        40%{transform:scale(1);}
+        60%{transform:translateY(-200px);opacity: 1;}
+        80%{opacity: 0;transform:translateY(-200px);}
+    }
 
     #pointsAdd2{
+        -webkit-transform:rotate(180deg);
+        -moz-transform:rotate(180deg);
+        -ms-transform:rotate(180deg);
+        -o-transform:rotate(180deg);
         transform:rotate(180deg);
         width: 100%;
     }
@@ -130,6 +176,21 @@
        80%{transform:translateY(0px)}
     }
      -webkit-@keyframes PointsAdd2{
+       0%{transform:translateY(200px)}
+       50%{transform:translateY(0px)}
+       80%{transform:translateY(0px)}
+    }
+     -moz-@keyframes PointsAdd2{
+       0%{transform:translateY(200px)}
+       50%{transform:translateY(0px)}
+       80%{transform:translateY(0px)}
+    }
+     -ms-@keyframes PointsAdd2{
+       0%{transform:translateY(200px)}
+       50%{transform:translateY(0px)}
+       80%{transform:translateY(0px)}
+    }
+     -o-@keyframes PointsAdd2{
        0%{transform:translateY(200px)}
        50%{transform:translateY(0px)}
        80%{transform:translateY(0px)}

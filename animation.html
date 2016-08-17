@@ -6,10 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
 <style>
-*{
-    padding: 0;
-    margin:0;
-}
+html {
+    -ms-touch-action: none;  /* 阻止windows Phone 的默认触摸事件 */
+    }
+    body,
+    div,
+    section,
+    h1{
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        list-style: none;
+    }
+    body {
+        width: 100%;
+        *cursor: default;
+        overflow: hidden;
+        font: 16px/1.5 "Microsoft YaHei",Helvetica,STHeiti STXihei,Microsoft JhengHei,Arial;
+    }
     #Loading{
         width: 100%;
         height: 100%;
@@ -28,7 +43,7 @@
         left: calc(50vw - 70px);
         top: calc(50vh - 140px);
         border-radius: 50%;
-        border: 20px solid rgba(255,255,255,.2);
+        border: 20px solid #52AED8;
         border-left: 20px solid #FFF;
         -webkit-animation: AlwaysRoll 0.8s infinite;
         -moz-animation: AlwaysRoll 0.8s infinite;
@@ -84,133 +99,56 @@
         font-size: 18px;
         font-family: 微软雅黑;
     }
-
     #pointsAdd{
-        display: none;
-        -webkit-animation:PointsAdd 2.6s;
-        -moz-animation:PointsAdd 2.6s;
-        -ms-animation:PointsAdd 2.6s;
-        -o-animation:PointsAdd 2.6s;
-        animation:PointsAdd 2.6s;
-    }
-    @keyframes PointsAdd{
-        80%{opacity: 1;}
-        100%{opacity: 0;}
-    }
-     -webkit-@keyframes PointsAdd{
-        80%{opacity: 1;}
-        100%{opacity: 0;}
-    }
-     -moz-@keyframes PointsAdd{
-        80%{opacity: 1;}
-        100%{opacity: 0;}
-    }
-     -ms-@keyframes PointsAdd{
-        80%{opacity: 1;}
-        100%{opacity: 0;}
-    }
-     -o-@keyframes PointsAdd{
-        80%{opacity: 1;}
-        100%{opacity: 0;}
-    }
-    #pointsAdd1{
         position: absolute;
-        top: 40%;
+        top: 30%;
         left: 50%;
         margin-left: -50px;
         margin-top: 50px;
         width: 100px;
         height: 50px;
         padding: 10px;
-        animation:PointsAdd1 2.6s;
-        -webkit-animation:PointsAdd1 2.6s;
-        -moz-animation:PointsAdd1 2.6s;
-        -ms-animation:PointsAdd1 2.6s;
-        -o-animation:PointsAdd1 2.6s;
-        opacity: 0;
+        -webkit-animation:PointsAdd 1.5s;
+        -moz-animation:PointsAdd 1.5s;
+        -ms-animation:PointsAdd 1.5s;
+        -o-animation:PointsAdd 1.5s;
+        animation:PointsAdd 1.5s;
+        display: none;
     }
-    #pointsAdd1 h1{
+    #pointsAdd h1{
         color: #fff;
     }
-    @keyframes PointsAdd1{
-        0%{transform:scale(.5);}
-        35%{transform:scale(1);}
-        40%{transform:scale(1);}
-        60%{transform:translateY(-200px);opacity: 1;}
-        80%{opacity: 0;transform:translateY(-200px);}
+    @keyframes PointsAdd{
+        0%{transform:scale(.5) translateY(200px);opacity:0;}
+        35%{transform:scale(1) translateY(0px);}
+        60%{transform:scale(1) translateY(0px);opacity: 1;}
+        100%{opacity: 0;transform:translateY(-300px)scale(2);}
     }
-    -webkit-@keyframes PointsAdd1{
-        0%{transform:scale(.5);}
-        35%{transform:scale(1);}
-        40%{transform:scale(1);}
-        60%{transform:translateY(-200px);opacity: 1;}
-        80%{opacity: 0;transform:translateY(-200px);}
+    -webkit-@keyframes PointsAdd{
+        0%{transform:scale(.5) translateY(200px);opacity: 0;}
+        35%{transform:scale(1) translateY(0px);}
+        60%{transform:scale(1) translateY(0px);opacity: 1;}
+        100%{opacity: 0;transform:translateY(-300px)scale(2);}
     }
-    -moz-@keyframes PointsAdd1{
-        0%{transform:scale(.5);}
-        35%{transform:scale(1);}
-        40%{transform:scale(1);}
-        60%{transform:translateY(-200px);opacity: 1;}
-        80%{opacity: 0;transform:translateY(-200px);}
+    -moz-@keyframes PointsAdd{
+        0%{transform:scale(.5) translateY(200px);opacity: 0;}
+        35%{transform:scale(1) translateY(0px);}
+        60%{transform:scale(1) translateY(0px);opacity: 1;}
+        100%{opacity: 0;transform:translateY(-300px)scale(2);}
     }
-    -ms-@keyframes PointsAdd1{
-        0%{transform:scale(.5);}
-        35%{transform:scale(1);}
-        40%{transform:scale(1);}
-        60%{transform:translateY(-200px);opacity: 1;}
-        80%{opacity: 0;transform:translateY(-200px);}
+    -ms-@keyframes PointsAdd{
+        0%{transform:scale(.5) translateY(200px);opacity: 0;}
+        35%{transform:scale(1) translateY(0px);}
+        60%{transform:scale(1) translateY(0px);opacity: 1;}
+        100%{opacity: 0;transform:translateY(-300px)scale(2);}
     }
-    -o-@keyframes PointsAdd1{
-        0%{transform:scale(.5);}
-        35%{transform:scale(1);}
-        40%{transform:scale(1);}
-        60%{transform:translateY(-200px);opacity: 1;}
-        80%{opacity: 0;transform:translateY(-200px);}
+    -o-@keyframes PointsAdd{
+        0%{transform:scale(.5) translateY(200px);opacity: 0;}
+        35%{transform:scale(1) translateY(0px);}
+        60%{transform:scale(1) translateY(0px);opacity: 1;}
+        100%{opacity: 0;transform:translateY(-300px)scale(2);}
     }
-
-    #pointsAdd2{
-        -webkit-transform:rotate(180deg);
-        -moz-transform:rotate(180deg);
-        -ms-transform:rotate(180deg);
-        -o-transform:rotate(180deg);
-        transform:rotate(180deg);
-        width: 100%;
-    }
-    #pointsAdd2 img{
-        width: 46vw;
-        margin-left: 27vw;
-        margin-bottom:0px;
-        -webkit-animation:PointsAdd2 2.6s;
-        -moz-animation:PointsAdd2 2.6s;
-        -ms-animation:PointsAdd2 2.6s;
-        -o-animation:PointsAdd2 2.6s;
-        animation:PointsAdd2 2.6s;
-    }
-     @keyframes PointsAdd2{
-       0%{transform:translateY(200px)}
-       50%{transform:translateY(0px)}
-       80%{transform:translateY(0px)}
-    }
-     -webkit-@keyframes PointsAdd2{
-       0%{transform:translateY(200px)}
-       50%{transform:translateY(0px)}
-       80%{transform:translateY(0px)}
-    }
-     -moz-@keyframes PointsAdd2{
-       0%{transform:translateY(200px)}
-       50%{transform:translateY(0px)}
-       80%{transform:translateY(0px)}
-    }
-     -ms-@keyframes PointsAdd2{
-       0%{transform:translateY(200px)}
-       50%{transform:translateY(0px)}
-       80%{transform:translateY(0px)}
-    }
-     -o-@keyframes PointsAdd2{
-       0%{transform:translateY(200px)}
-       50%{transform:translateY(0px)}
-       80%{transform:translateY(0px)}
-    }
+   
 </style>
 </head>
 <!--[if lte IE 7]>      
@@ -225,18 +163,12 @@
 
 <section class="page">
     <button id="CheckIn">BIU</button>
-
-    <div id="pointsAdd">
-        <div id="pointsAdd1">
+        <div id="pointsAdd">
             <h1>+2积分</h1>
         </div>
-        <div id="pointsAdd2">
-            <img src="1.png">
-        </div>
-    </div>
 </section>
 
-
+ 
 
 <script type="text/javascript">
 function CloseLoading(){

@@ -1,0 +1,495 @@
+/*
+
+============================================================ 
+==================== Lucus 自制API   =======================
+============================================================ 
+===================== step事件动画  ======================== 
+FromRollLeft：3step 1进入动画，2变大透明，3缩小消失。
+从左侧滚入。
+FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
+从右侧滚入。
+============================================================
+===================== 自动播放动画  ======================== 
+.FromLeftRollWord：2s 从左侧滑入。
+.FromRightRollWord：2s 从右侧滑入。
+============================================================
+ */
+
+
+
+ html {
+    -ms-touch-action: none;  /* 阻止windows Phone 的默认触摸事件 */
+    }
+    body,
+    div,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        list-style: none;
+    }
+    body{
+        width: 100%;
+        *cursor: default;
+        overflow: hidden;
+        font: 16px/1.5 "Microsoft YaHei",Helvetica,STHeiti STXihei,Microsoft JhengHei,Arial;
+    }
+    #Loading{
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: #666;
+        position: fixed;
+        z-index: 9999;
+    }
+    #Loading:before{
+        content: " ";
+        width: 100px;
+        height: 100px;
+        display: block;
+        background: rgba(255,255,255,.0);
+        position: absolute;
+        left: calc(50vw - 70px);
+        top: calc(50vh - 140px);
+        border-radius: 50%;
+        border: 20px solid rgba(255,255,255,.2);
+        border-left: 20px solid #FFF;
+        animation: AlwaysRoll 0.8s infinite;
+    }
+    #Loading:after{
+        content: "精彩即将呈现";
+        position: absolute;
+        left: calc(50vw - 50px);
+        top: calc(50vh + 20px);
+        color: #fff;
+
+    }
+    @keyframes AlwaysRoll{
+        from{transform:rotate(360deg)}
+    }
+    -webkit-@keyframes AlwaysRoll{
+        from{transform:rotate(360deg)}
+    }
+    #music{
+        z-index: 9;
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        padding: 10px;
+        background-size: 40px 40px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    .onaudio{
+        background: url(../img/normalmusic.svg);
+        
+    }
+    .offaudio{
+        background: url(../img/normalmusic.svg);
+    }
+.pre-wrap {
+    width: 24px;
+    height: 14px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -7px;
+    z-index: 100;
+    -webkit-animation: keepWagglemin 1.5s infinite ease-in-out;
+    -moz-animation: keepWagglemin 1.5s infinite ease-in-out;
+    animation: keepWagglemin 1.5s infinite ease-in-out;
+}
+-webkit-@keyframes keepWagglemin{
+    from{
+        bottom: 10px;
+        opacity: .3;
+    }
+}
+-moz-@keyframes keepWagglemin{
+    from{
+        bottom: 10px;
+        opacity: .3;
+    }
+}
+@keyframes keepWagglemin{
+    from{
+        bottom: 10px;
+        opacity: .3;
+    }
+}
+.pre-box1, .pre-box2 {
+    height: 15px;
+    width: 11px;
+    position: absolute;
+    top: -5px;
+    overflow: hidden;
+}
+.pre1, .pre2 {
+    width: 14px;
+    height: 5px;
+    position: absolute;
+    box-shadow: 1px -1px 1px #646464;
+    top: 5px;
+}
+.pre1, .pre2{
+    border-radius: 2px;
+    background-color: #fff;
+}
+.pre1 {
+    transform: rotate(130deg);
+    -webkit-transform: rotate(130deg);
+    left: 1px;
+}
+.pre2 {
+    left: -4.5px;
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+.pre-box2 {
+    left: 10px;
+}
+
+
+
+
+
+
+
+    #pageContain {
+        overflow: hidden;
+    }
+    .page {
+        display: none;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .contain {
+        width: 100%;
+        height: 100%;
+        display: none;
+        position: relative;
+        z-index: 0;
+    }
+    .current .contain,.slide .contain {
+        display: block;
+    }
+    .current {
+        display: block;
+        z-index: 1;
+    }
+    .slide {
+        display: block;
+        z-index: 2;
+    }
+    .swipe {
+        display: block;
+        z-index: 3;
+        transition-duration: 0ms !important;
+        -webkit-transition-duration: 0ms !important;
+    }
+    .page1 {
+        background: url(../img/bg01.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .page2 {
+        background: url(../img/bg02.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .page3 {
+        background: url(../img/bg03.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .page4 {
+        background: url(../img/bg04.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .page5 {
+       background: url(../img/bg05.jpeg);
+       background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .page6 {
+       background: url(../img/bg06.jpeg);
+       background-size: cover;
+       background-repeat: no-repeat;
+    }
+
+
+
+
+    p {
+        width: 200px;
+        height: 100px;
+        color:#fff;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -100px;
+        margin-top: -50px;
+        opacity: 1;
+        transition: all .8s ease;
+        transform-origin: 50% 50%;
+    }
+    .page-title{
+        color: rgb(103, 103, 103);
+        position: absolute;
+        left: calc(50vw - 130px);
+        top: calc(30vh +  100px);
+        font-size: 15px;
+        text-align: center;
+        transition: all .8s ease;
+    }
+    .index-img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        left: calc(50vw - 100px);
+        top: calc(30vh - 100px);
+        animation:FromRollBall 3s;
+        transition: all .8s ease;
+    }
+    .index-img img{ 
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        box-shadow:0 0 0 5px rgb(189, 189, 189);
+    }
+    .con-img{
+        max-width: 80%;
+        height: auto;
+        margin:8vh auto;
+        overflow: hidden;
+        padding: 20px;
+        margin-bottom: 0;
+    }   
+    .con-img img{
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 0 5px #fefefe;
+    }
+ 
+    .con-title{
+        text-align: center;
+    }
+    .con-title h2{
+        padding:5px 20px;
+        display: inline-block;
+        background: rgba(116, 116, 116,.7);
+        box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 0px;
+        color: #fff;
+        border-radius: 15px;
+        font-weight: 500;
+    }
+
+
+
+
+
+
+
+
+    
+    .positionBtoR{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+    .positionTtoR{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .positionCtoR{
+        position: absolute;
+        bottom:40%;
+        right: 10px;
+    }
+    .positionBtoL{
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+    .positionCtoL{
+        position: absolute;
+        bottom: 40%;
+        left: 10px;
+    }
+    .positionTtoL{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .positionTtoC{
+        position: absolute;
+        top: 10px;
+        left: 40%;
+    }
+    .positionBtoC{
+        position: absolute;
+        bottom: 10px;
+        left: 40%;
+    }
+
+
+
+
+    .FromLeftRollWord{
+        animation: FromLeftRollWord 2s;
+    }
+    .FromRightRollWord{
+        animation:FromRightRollWord 2s;
+    }
+    .FromTopRollWord{
+        animation:FromTopRollWord 2s;
+    }
+    .FromBottomRollWord{
+        animation:FromBottomRollWord 2s;
+    }
+    @keyframes FromRollBall{
+        from{
+            transform:translateX(300px) rotate(360deg);
+        }
+    }
+     -webkit-@keyframes FromRollBall{
+        from{
+            transform:translateX(300px) rotate(360deg);
+        }
+    }
+     @keyframes FromLeftRollWord{
+        from{
+            transform:translateX(-400px);
+        }
+     }
+     @keyframes FromRightRollWord{
+        from{
+            transform:translateX(400px);
+        }
+     }
+     @keyframes FromTopRollWord{
+        from{
+            transform:translateY(-400px);
+        }
+     }
+     @keyframes FromBottomRollWord{
+        from{
+            transform:translateY(400px);
+        }
+     }
+      -webkit-@keyframes FromLeftRollWord{
+        from{
+            transform:translateX(-400px);
+        }
+     }
+    -webkit-@keyframes FromRightRollWord{
+        from{
+            transform:translateX(400px);
+        }
+     }
+      -webkit-@keyframes FromTopRollWord{
+        from{
+            transform:translateY(-400px);
+        }
+     }
+     -webkit-@keyframes FromBottomRollWord{
+        from{
+            transform:translateY(400px);
+        }
+     }
+
+
+
+    .FromRollLeft,
+    .FromRollRight{
+        opacity:0;
+        transition: all .8s ease;
+    }
+    .FromRollLeft{
+        -webkit-transform: rotate(-100deg) translate(0,-200px) scale(.3);
+        transform: rotate(-100deg) translate(0,-200px) scale(.3);
+    }
+    .FromRollRight{
+        -webkit-transform: rotate(100deg) translate(0,-200px) scale(.3);
+        transform: rotate(100deg) translate(0,-200px) scale(.3);
+    }
+    .keepRotate{
+        animation:KeepRotate 3s infinite linear;
+    }
+  -webkit-@keyframes KeepRotate{
+        to{
+           -webkit-transform: rotate(359deg);
+           transform:rotate(359deg);
+        }
+     }
+    @keyframes KeepRotate{
+        to{
+           -webkit-transform: rotate(359deg);
+           transform:rotate(359deg);
+        }
+     }
+    .keepWaggle{
+        animation:KeepWaggle 1.5s infinite ease-in-out;
+    }
+    @keyframes KeepWaggle{
+       from{
+            transform:translateY(40px);
+       }
+       50%{
+        transform:translateY(0px);
+       }
+       to{
+            transform:translateY(40px);
+       }
+     }
+    .keepWaggleLR{
+        animation:KeepWaggleLR 1.5s infinite ease-in-out;
+    }
+    @keyframes KeepWaggleLR{
+       from{
+            transform:translateX(40px);
+       }
+       50%{
+        transform:translateX(0px);
+       }
+       to{
+            transform:translateX(40px);
+       }
+     }
+    .scaleFromBtoS{
+        animation:ScaleFromBtoS 1.5s linear;
+     }
+    .scaleFromStoB{
+        animation:ScaleFromStoB 1.5s linear;
+    }
+     @keyframes ScaleFromBtoS{
+       from{
+            transform:scale(1.2);
+            -webkit-transform:scale(1.2);
+       }
+     }
+      @keyframes ScaleFromStoB{
+       from{
+            transform:scale(.8);
+            -webkit-transform:scale(.8);
+       }
+    
+     }
+
+
+
+
+
+    

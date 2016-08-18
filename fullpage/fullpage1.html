@@ -5,7 +5,7 @@
     <title>轻轻学堂-学员日志分享</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
 </head>
 <!--[if lte IE 7]>      
 <body scroll="no"> 
@@ -14,13 +14,21 @@
 <body onload="CloseLoading()" id="FullPage"> 
 <!--<![endif]-->
 <div id="Loading"></div>
-<div id="music" class="onaudio" onclick="AuOnOff()">
+<div id="music" class="onaudio keepRotate" onclick="AuOnOff()">
 <audio src="mp3/xxx.mp3" autoplay="autoplay"  loop="loop" id="aud">
 </audio>
 </div>
+<div class="pre-wrap">
+    <div class="pre-box1">
+        <div class="pre1"></div>
+    </div>
+    <div class="pre-box2">
+        <div class="pre2"></div>
+    </div>
+</div>
 	<div id="pageContain">
 		
-		<div class="page page1 current" data-step="1">
+		<div class="page page1 current">
 			<div class="contain">
 				
                 <div class="index-img">
@@ -30,48 +38,67 @@
                     <h1 class="FromLeftRollWord">分享给你</h1>
                     <h2 class="FromRightRollWord">我在新月学堂的愉快暑假</h2>            
                 </div>
-			</div>
-		</div>
-
-		<div class="page page2" data-step="3">
-			<div class="contain">
-                <div class="contain-title">
-                    <h2></h2>            
+                <div class="positionCtoR FromLeftRollWord">
+                    <img src="img/xiongmao.png" alt="" class="keepWaggle">
                 </div>
-				<div class="con-img left FromRollLeft">
-                    <img src="img/face.jpg">
-                    <img src="img/face.jpg"> 
-                    <img src="img/face.jpg">            
+                <div class="positionBtoR FromRightRollWord">
+                     <img src="img/xiang.png" alt="">
                 </div>
-                <div class="con-img right FromRollRight">
-                    <img src="img/face.jpg">
-                    <img src="img/face.jpg"> 
-                    <img src="img/face.jpg">            
-                </div>
-			</div>
-		</div>
-
-		<div class="page page3" data-step="4">
-			<div class="contain">
-				<p class="demo-data-step">分4部展示的动画文字</p>
-			</div>
-		</div>
-
-		<div class="page page4">
-			<div class="contain">
-				
 			</div>
 		</div>
 
 		<div class="page page2">
 			<div class="contain">
-				
+				<div class="con-img">
+                    <img src="img/1.jpg" class="FromLeftRollWord">           
+                </div>
+                <div class="FromRightRollWord con-title">
+                    <h2>小小书画家</h2>
+                </div>
 			</div>
 		</div>
 
-		<div class="page page1">
+		<div class="page page3">
 			<div class="contain">
-				
+				<div class="con-img">
+                    <img src="img/1.jpg" class="scaleFromBtoS">           
+                </div>
+                <div class="FromTopRollWord con-title">
+                    <h2>小小书画家</h2>
+                </div>
+			</div>
+		</div>
+
+		<div class="page page4">
+			<div class="contain">
+				<div class="con-img keepWaggle">
+                    <img src="img/1.jpg" class="FromRightRollWord">           
+                </div>
+                <div class="FromBottomRollWord con-title">
+                    <h2>小小书画家</h2>
+                </div>
+			</div>
+		</div>
+
+		<div class="page page5">
+			<div class="contain">
+				<div class="con-img">
+                    <img src="img/1.jpg" class="FromBottomRollWord">           
+                </div>
+                <div class="FromLeftRollWord con-title">
+                    <h2>小小书画家</h2>
+                </div>
+			</div>
+		</div>
+
+		<div class="page page6">
+			<div class="contain">
+				<div class="con-img">
+                    <img src="img/1.jpg" class="FromTopRollWord">           
+                </div>
+                <div class="FromRightRollWord con-title">
+                    <h2>小小书画家</h2>
+                </div>
 			</div>
 		</div> 
 	</div>
@@ -87,7 +114,7 @@ var music = document.getElementById('music');
 var aud = document.getElementById('aud');
    if(music.className == 'offaudio')
    {
-    music.className ='onaudio';
+    music.className ='onaudio keepRotate aniKp';
     aud.play();
    }else{
     music.className ='offaudio';
@@ -105,7 +132,7 @@ runPage = new FullPage({
         	transform : {
         		translate : 'Y',				   // 'X'|'Y'|'XY'|'none'
         		scale : [1, 1],				   // [scalefrom, scaleto]
-        		rotate : [180, 0]				       // [rotatefrom, rotateto]
+        		rotate : [0, 0]				       // [rotatefrom, rotateto]
         	},
         	opacity : [0, 1]                       // [opacityfrom, opacityto]
     	},                           

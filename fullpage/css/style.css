@@ -29,7 +29,7 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
     ul {
         list-style: none;
     }
-    body {
+    body{
         width: 100%;
         *cursor: default;
         overflow: hidden;

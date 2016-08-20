@@ -39,6 +39,7 @@ html {
         border: 20px solid rgba(255,255,255,.2);
         border-left: 20px solid #FFF;
         -webkit-animation: AlwaysRoll 0.8s  infinite linear;
+        -moz-animation: AlwaysRoll 0.8s infinite linear;
         animation: AlwaysRoll 0.8s infinite linear;
     }
     #Loading:after{
@@ -54,24 +55,21 @@ html {
     -webkit-@keyframes AlwaysRoll{
         0%{
            -webkit-transform:rotate(359deg);
+            -moz-transform:rotate(359deg);
             transform:rotate(359deg);
         }
     }
     -moz-@keyframes AlwaysRoll{
         0%{
             -webkit-transform:rotate(359deg);
-            transform:rotate(359deg);
-        }
-    }
-    @-webkit-keyframes AlwaysRoll{
-        0%{
-            -webkit-transform:rotate(359deg);
+            -moz-transform:rotate(359deg);
             transform:rotate(359deg);
         }
     }
     @keyframes AlwaysRoll{
         0%{
             -webkit-transform:rotate(359deg);
+            -moz-transform:rotate(359deg);
             transform:rotate(359deg);
         }
     }
@@ -103,6 +101,7 @@ html {
     margin-left: -7px;
     z-index: 100;
     -webkit-animation: keepWagglemin 1.5s infinite ease-in-out;
+    -moz-animation: keepWagglemin 1.5s infinite ease-in-out;
     animation: keepWagglemin 1.5s infinite ease-in-out;
 }
 -webkit-@keyframes keepWagglemin{
@@ -112,12 +111,6 @@ html {
     }
 }
 -moz-@keyframes keepWagglemin{
-    0%{
-        bottom: 10px;
-        opacity: .3;
-    }
-}
-@-webkit-keyframes keepWagglemin{
     0%{
         bottom: 10px;
         opacity: .3;
@@ -204,42 +197,32 @@ html {
         -webkit-transition-duration: 0ms !important;
     }
     .page1 {
-        background: url(../img/bg01.png);
-        background-size: cover;
-        background-repeat: no-repeat;
+         background: linear-gradient(
+                #64ccfc,#3e8ff2);
     }
     .page2 {
-        background: url(../img/bg02.jpeg);
-        background-size: cover;
-        background-repeat: no-repeat;
+        background: linear-gradient(
+               #6fedd1,#4abfb7);
     }
     .page3 {
-        background: url(../img/bg03.jpeg);
-        background-size: cover;
-        background-repeat: no-repeat;
+         background: linear-gradient(
+               #f38e65,#f2686d);
     }
     .page4 {
-        background: url(../img/bg04.jpeg);
-        background-size: cover;
-        background-repeat: no-repeat;
+         background: linear-gradient(
+                #fecd70,#ec8d2c);
     }
     .page5 {
-       background: url(../img/bg05.jpeg);
-       background-size: cover;
-       background-repeat: no-repeat;
+        background: #00ff00;
     }
     .page6 {
-       background: url(../img/bg06.jpeg);
-       background-size: cover;
-       background-repeat: no-repeat;
+        background: #22ffff;
     }
     
 
 
 
     .pageEnd {
-         background: -webkit-linear-gradient(
-                #64ccfc,#3e8ff2);
          background: linear-gradient(
                 #64ccfc,#3e8ff2);
     }
@@ -280,10 +263,8 @@ html {
         margin-left: -100px;
         margin-top: -50px;
         opacity: 1;
-        -webkit-transition: all .8s ease;
         transition: all .8s ease;
-        -webkit-transform-origin: 50% 50%;
-                transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
     }
     .page-title{
         color: rgb(103, 103, 103);
@@ -294,7 +275,6 @@ html {
         margin-top: 100px;
         font-size: 15px;
         text-align: center;
-        -webkit-transition: all .8s ease;
         transition: all .8s ease;
     }
     .index-img{
@@ -306,11 +286,12 @@ html {
         top: 30%;
         margin-left: -100px;
         margin-top: -100px;
-        -webkit-transition: all .8s ease;
         transition: all .8s ease;
         -webkit-animation:FromRollBall 3s;
+        -moz-animation:FromRollBall 3s;
         animation:FromRollBall 3s;
     }
+    
     .index-img img{ 
         width: inherit;
         height: inherit;
@@ -395,12 +376,52 @@ html {
 
 
 
+    .positionBtoR{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+    .positionTtoR{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .positionCtoR{
+        position: absolute;
+        bottom:40%;
+        right: 10px;
+    }
+    .positionBtoL{
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+    .positionCtoL{
+        position: absolute;
+        bottom: 40%;
+        left: 10px;
+    }
+    .positionTtoL{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .positionTtoC{
+        position: absolute;
+        top: 10px;
+        left: 40%;
+    }
+    .positionBtoC{
+        position: absolute;
+        bottom: 10px;
+        left: 40%;
+    }
+
+
+
+    
 
 
 
 
-
-
-
-
-
+    

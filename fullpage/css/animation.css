@@ -1,0 +1,518 @@
+/* 
+============================================================ 
+============================================================
+========================== 动画库  ========================= 
+============================================================
+============================================================
+ */
+
+
+/* 定位 */
+
+    .positionBtoR{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+    .positionTtoR{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .positionCtoR{
+        position: absolute;
+        bottom:40%;
+        right: 10px;
+    }
+    .positionBtoL{
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+    .positionCtoL{
+        position: absolute;
+        bottom: 40%;
+        left: 10px;
+    }
+    .positionTtoL{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .positionTtoC{
+        position: absolute;
+        top: 10px;
+        left: 40%;
+    }
+    .positionBtoC{
+        position: absolute;
+        bottom: 10px;
+        left: 40%;
+    }
+
+
+
+
+
+
+/*动画延时*/
+    .ADelay1{
+        animation-delay: .5s;
+    }
+    .ADelay2{
+        animation-delay: 1s;
+    }
+    .ADelay3{
+        animation-delay: 1.5s;
+    }
+    .ADelay4{
+        animation-delay: 2s;
+    }
+
+
+
+
+
+
+    .FromLeftRollWord{
+        /* Safari 和 Chrome: */
+        -webkit-animation-name: FromLeftRollWord;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-timing-function: linear;
+        /* Firefox: */
+        -moz-animation-name: FromLeftRollWord;
+        -moz-animation-duration: 2s;
+        -moz-animation-timing-function: linear;
+
+        animation-name: FromLeftRollWord;
+        animation-duration: 2s;
+        animation-timing-function: linear; 
+    }
+    .FromRightRollWord{
+        /* Safari 和 Chrome: */
+        -webkit-animation-name: FromRightRollWord;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-timing-function: linear;
+        /* Firefox: */
+        -moz-animation-name: FromRightRollWord;
+        -moz-animation-duration: 2s;
+        -moz-animation-timing-function: linear;
+
+        animation-name: FromRightRollWord;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+    }
+    .FromTopRollWord{
+        /* Safari 和 Chrome: */
+        -webkit-animation-name: FromTopRollWord;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-timing-function: linear;
+        /* Firefox: */
+        -moz-animation-name: FromTopRollWord;
+        -moz-animation-duration: 2s;
+        -moz-animation-timing-function: linear;
+
+        animation-name: FromTopRollWord;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+    }
+    .FromBottomRollWord{
+        /* Safari 和 Chrome: */
+        -webkit-animation-name: FromBottomRollWord;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-timing-function: linear;
+        /* Firefox: */
+        -moz-animation-name: FromBottomRollWord;
+        -moz-animation-duration: 2s;
+        -moz-animation-timing-function: linear;
+
+        animation-name: FromBottomRollWord;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+    }
+    @keyframes FromRollBall{
+        0%{
+            -webkit-transform:translateX(300px) rotate(360deg);
+            transform:translateX(300px) rotate(360deg);
+        }
+    }
+    @keyframes FromLeftRollWord{
+        0%{
+            -webkit-transform:translateX(-400px);
+            transform:translateX(-400px);
+        }
+     }
+     @keyframes FromRightRollWord{
+        0%{
+            -webkit-transform:translateX(400px);
+            transform:translateX(400px);
+        }
+     }
+     @keyframes FromTopRollWord{
+        0%{
+            -webkit-transform:translateY(-400px);
+            transform:translateY(-400px);
+        }
+     }
+     @keyframes FromBottomRollWord{
+        0%{
+            -webkit-transform:translateY(400px);
+            transform:translateY(400px);
+        }
+     }
+
+
+     -webkit-@keyframes FromRollBall{
+        0%{
+            -webkit-transform:translateX(300px) rotate(360deg);
+            transform:translateX(300px) rotate(360deg);
+        }
+    }
+      -webkit-@keyframes FromLeftRollWord{
+        0%{
+            transform:translateX(-400px);
+        }
+     }
+    -webkit-@keyframes FromRightRollWord{
+        0%{
+            transform:translateX(400px);
+        }
+     }
+      -webkit-@keyframes FromTopRollWord{
+        0%{
+            transform:translateY(-400px);
+        }
+     }
+     -webkit-@keyframes FromBottomRollWord{
+        0%{
+            transform:translateY(400px);
+        }
+     }
+    
+
+
+     -moz-@keyframes FromRollBall{
+        0%{
+            transform:translateX(300px) rotate(360deg);
+        }
+    }
+      -moz-@keyframes FromLeftRollWord{
+        0%{
+            transform:translateX(-400px);
+        }
+     }
+    -moz-@keyframes FromRightRollWord{
+        0%{
+            transform:translateX(400px);
+        }
+     }
+      -moz-@keyframes FromTopRollWord{
+        0%{
+            transform:translateY(-400px);
+        }
+     }
+     -moz-@keyframes FromBottomRollWord{
+        0%{
+            transform:translateY(400px);
+        }
+     }
+    
+    
+
+    .ToLinear{
+        /* Safari 和 Chrome: */
+        -webkit-animation-name: ToLinearLeft;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-fill-mode:forwards;
+        /* Firefox: */
+        -moz-animation-name: ToLinearLeft;
+        -moz-animation-duration: 1s;
+        -moz-animation-timing-function: linear;
+        -moz-animation-fill-mode:forwards;
+
+        animation-name: ToLinearLeft;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-fill-mode:forwards;  
+    }
+    -webkit-@keyframes ToLinearLeft{
+       100%{
+            transform:translateX(0px);
+       }
+    }
+    -moz-@keyframes ToLinearLeft{
+       100%{
+            transform:translateX(0px);
+       }
+    }
+    @keyframes ToLinearLeft{
+       100%{
+            transform:translateX(0px);
+       }
+    }
+
+
+
+
+    .keepRotate{
+        /* Safari 和 Chrome: */
+        -webkit-animation-name:KeepRotate;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        /* Firefox: */
+        -moz-animation-name:KeepRotate;
+        -moz-animation-duration: 3s;
+        -moz-animation-timing-function: linear;
+        -moz-animation-iteration-count: infinite;
+
+        animation-name:KeepRotate;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    -webkit-@keyframes KeepRotate{
+        100%{
+           -webkit-transform: rotate(359deg);
+           transform:rotate(359deg);
+        }
+     }
+    -moz-@keyframes KeepRotate{
+        100%{
+           -webkit-transform: rotate(359deg);
+           transform:rotate(359deg);
+        }
+     }
+     @keyframes KeepRotate{
+        100%{
+           -webkit-transform: rotate(359deg);
+           transform:rotate(359deg);
+        }
+     }
+    .keepWaggle{
+        /* Safari 和 Chrome: */
+        -webkit-animation-name:KeepWaggle;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: infinite;
+        /* Firefox: */
+        -moz-animation-name:KeepWaggle;
+        -moz-animation-duration: 1.5s;
+        -moz-animation-timing-function: ease-in-out;
+        -moz-animation-iteration-count: infinite;
+
+        animation-name:KeepWaggle;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+    -webkit-@keyframes KeepWaggle{
+       0%{
+            transform:translateY(40px);
+       }
+       50%{
+        transform:translateY(0px);
+       }
+       100%{
+            transform:translateY(40px);
+       }
+     }
+    -moz-@keyframes KeepWaggle{
+       0%{
+            transform:translateY(40px);
+       }
+       50%{
+        transform:translateY(0px);
+       }
+       100%{
+            transform:translateY(40px);
+       }
+     }
+    @keyframes KeepWaggle{
+       0%{
+            transform:translateY(40px);
+       }
+       50%{
+        transform:translateY(0px);
+       }
+       100%{
+            transform:translateY(40px);
+       }
+     }
+    .keepWaggleLR{
+        /* Safari 和 Chrome: */
+        -webkit-animation-name:KeepWaggleLR;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: infinite;
+        /* Firefox: */
+        -moz-animation-name:KeepWaggleLR;
+        -moz-animation-duration: 1.5s;
+        -moz-animation-timing-function: ease-in-out;
+        -moz-animation-iteration-count: infinite;
+
+        animation-name:KeepWaggleLR;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+    -webkit-@keyframes KeepWaggleLR{
+       0%{
+            -webkit-transform:translateX(40px);
+            -moz-transform:translateX(40px);
+            transform:translateX(40px);
+       }
+       50%{
+            -webkit-transform:translateX(0px);
+            -moz-transform:translateX(0px);
+            transform:translateX(0px);
+       }
+       100%{
+            -webkit-transform:translateX(40px);
+            -moz-transform:translateX(40px);
+            transform:translateX(40px);
+       }
+     }
+    -moz-@keyframes KeepWaggleLR{
+       0%{
+            -webkit-transform:translateX(40px);
+            -moz-transform:translateX(40px);
+            transform:translateX(40px);
+       }
+       50%{
+            -webkit-transform:translateX(0px);
+            -moz-transform:translateX(0px);
+            transform:translateX(0px);
+       }
+       100%{
+            -webkit-transform:translateX(40px);
+            -moz-transform:translateX(40px);
+            transform:translateX(40px);
+       }
+     }
+    @keyframes KeepWaggleLR{
+       0%{
+            -webkit-transform:translateX(40px);
+            -moz-transform:translateX(40px);
+            transform:translateX(40px);
+       }
+       50%{
+            -webkit-transform:translateX(0px);
+            -moz-transform:translateX(0px);
+            transform:translateX(0px);
+       }
+       100%{
+            -webkit-transform:translateX(40px);
+            -moz-transform:translateX(40px);
+            transform:translateX(40px);
+       }
+     }
+    .scaleFromBtoS{
+        /* Safari 和 Chrome: */
+        -webkit-animation-name:ScaleFromBtoS;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-timing-function: linear;
+        
+        /* Firefox: */
+        -moz-animation-name:ScaleFromBtoS;
+        -moz-animation-duration: 1.5s;
+        -moz-animation-timing-function: linear;
+
+        animation-name:ScaleFromBtoS;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+     }
+    .scaleFromStoB{
+        /* Safari 和 Chrome: */
+        -webkit-animation-name:ScaleFromStoB;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-timing-function: linear;
+        
+        /* Firefox: */
+        -moz-animation-name:ScaleFromStoB;
+        -moz-animation-duration: 1.5s;
+        -moz-animation-timing-function: linear;
+
+        animation-name:ScaleFromStoB;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+    }
+    -webkit-@keyframes ScaleFromBtoS{
+       0%{
+            -webkit-transform:scale(1.2);
+            -moz-transform:scale(1.2);
+            transform:scale(1.2);
+            
+       }
+     }
+    -moz-@keyframes ScaleFromBtoS{
+       0%{
+            -webkit-transform:scale(1.2);
+            -moz-transform:scale(1.2);
+            transform:scale(1.2);
+       }
+     }
+     @keyframes ScaleFromBtoS{
+       0%{
+            -webkit-transform:scale(1.2);
+            -moz-transform:scale(1.2);
+            transform:scale(1.2);
+       }
+     }
+    
+    -webkit-@keyframes ScaleFromStoB{
+       0%{
+            -webkit-transform:scale(.8);
+            -moz-transform:scale(.8);
+            transform:scale(.8);
+       }
+    
+     }
+    -moz-@keyframes ScaleFromStoB{
+       0%{
+            -webkit-transform:scale(.8);
+            -moz-transform:scale(.8);
+            transform:scale(.8);
+       }
+    
+     }
+    @keyframes ScaleFromStoB{
+       0%{
+           -webkit-transform:scale(.8);
+           -moz-transform:scale(.8);
+           transform:scale(.8);
+       }
+    
+     }
+    .widthStoB{
+        /* Safari 和 Chrome: */
+        -webkit-animation-name:widthStoB;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-timing-function: linear;
+        
+        /* Firefox: */
+        -moz-animation-name:widthStoB;
+        -moz-animation-duration: 1.5s;
+        -moz-animation-timing-function: linear;
+
+        animation-name:widthStoB;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+
+    }
+    -webkit-@keyframes widthStoB{
+        0%{
+            width: 0;
+        }
+    }
+    -moz-@keyframes widthStoB{
+        0%{
+            width: 0;
+        }
+    }
+    @keyframes widthStoB{
+        0%{
+            width: 0;
+        }
+    }

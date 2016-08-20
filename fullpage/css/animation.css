@@ -8,7 +8,7 @@
 
 
 /* 定位 */
-
+    /* B = Bottom , R = right , T = top , L = left ,C = center , RLC 在后 TB 在前。 */
     .positionBtoR{
         position: absolute;
         bottom: 10px;

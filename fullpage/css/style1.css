@@ -1,17 +1,9 @@
 /*
 
 ============================================================ 
-==================== Lucus 自制API   =======================
-============================================================ 
-===================== step事件动画  ======================== 
-FromRollLeft：3step 1进入动画，2变大透明，3缩小消失。
-从左侧滚入。
-FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
-从右侧滚入。
 ============================================================
 ===================== 自动播放动画  ======================== 
-.FromLeftRollWord：2s 从左侧滑入。
-.FromRightRollWord：2s 从右侧滑入。
+
 ============================================================
  */
 
@@ -50,40 +42,46 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
         display: block;
         background: rgba(255,255,255,.0);
         position: absolute;
-        left: calc(50vw - 70px);
-        top: calc(50vh - 140px);
+        left:50%;
+        top: 50%;
+        margin-left: -70px;
+        margin-top: -140px;
         border-radius: 50%;
         border: 20px solid rgba(255,255,255,.2);
         border-left: 20px solid #FFF;
-        animation: AlwaysRoll 0.8s infinite;
+        -webkit-animation: AlwaysRoll 0.8s  infinite linear;
+        -moz-animation: AlwaysRoll 0.8s infinite linear;
+        animation: AlwaysRoll 0.8s infinite linear;
     }
     #Loading:after{
         content: "精彩即将呈现";
         position: absolute;
-        left: calc(50vw - 50px);
-        top: calc(50vh + 20px);
+        left: 50%;
+        top: 50%;
+        margin-top: 20px;
+        margin-left: -50px;
         color: #fff;
 
     }
     -webkit-@keyframes AlwaysRoll{
-        from{
-           -webkit-transform:rotate(360deg);
-            -moz-transform:rotate(360deg);
-            transform:rotate(360deg);
+        0%{
+           -webkit-transform:rotate(359deg);
+            -moz-transform:rotate(359deg);
+            transform:rotate(359deg);
         }
     }
     -moz-@keyframes AlwaysRoll{
-        from{
-            -webkit-transform:rotate(360deg);
-            -moz-transform:rotate(360deg);
-            transform:rotate(360deg);
+        0%{
+            -webkit-transform:rotate(359deg);
+            -moz-transform:rotate(359deg);
+            transform:rotate(359deg);
         }
     }
     @keyframes AlwaysRoll{
-        from{
-            -webkit-transform:rotate(360deg);
-            -moz-transform:rotate(360deg);
-            transform:rotate(360deg);
+        0%{
+            -webkit-transform:rotate(359deg);
+            -moz-transform:rotate(359deg);
+            transform:rotate(359deg);
         }
     }
     #music{
@@ -118,19 +116,19 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
     animation: keepWagglemin 1.5s infinite ease-in-out;
 }
 -webkit-@keyframes keepWagglemin{
-    from{
+    0%{
         bottom: 10px;
         opacity: .3;
     }
 }
 -moz-@keyframes keepWagglemin{
-    from{
+    0%{
         bottom: 10px;
         opacity: .3;
     }
 }
 @keyframes keepWagglemin{
-    from{
+    0%{
         bottom: 10px;
         opacity: .3;
     }
@@ -460,54 +458,54 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
         animation:FromBottomRollWord 2s;
     }
     @keyframes FromRollBall{
-        from{
+        0%{
             transform:translateX(300px) rotate(360deg);
         }
     }
     @keyframes FromLeftRollWord{
-        from{
+        0%{
             transform:translateX(-400px);
         }
      }
      @keyframes FromRightRollWord{
-        from{
+        0%{
             transform:translateX(400px);
         }
      }
      @keyframes FromTopRollWord{
-        from{
+        0%{
             transform:translateY(-400px);
         }
      }
      @keyframes FromBottomRollWord{
-        from{
+        0%{
             transform:translateY(400px);
         }
      }
 
 
      -webkit-@keyframes FromRollBall{
-        from{
+        0%{
             transform:translateX(300px) rotate(360deg);
         }
     }
       -webkit-@keyframes FromLeftRollWord{
-        from{
+        0%{
             transform:translateX(-400px);
         }
      }
     -webkit-@keyframes FromRightRollWord{
-        from{
+        0%{
             transform:translateX(400px);
         }
      }
       -webkit-@keyframes FromTopRollWord{
-        from{
+        0%{
             transform:translateY(-400px);
         }
      }
      -webkit-@keyframes FromBottomRollWord{
-        from{
+        0%{
             transform:translateY(400px);
         }
      }
@@ -515,27 +513,27 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
 
 
      -moz-@keyframes FromRollBall{
-        from{
+        0%{
             transform:translateX(300px) rotate(360deg);
         }
     }
       -moz-@keyframes FromLeftRollWord{
-        from{
+        0%{
             transform:translateX(-400px);
         }
      }
     -moz-@keyframes FromRightRollWord{
-        from{
+        0%{
             transform:translateX(400px);
         }
      }
       -moz-@keyframes FromTopRollWord{
-        from{
+        0%{
             transform:translateY(-400px);
         }
      }
      -moz-@keyframes FromBottomRollWord{
-        from{
+        0%{
             transform:translateY(400px);
         }
      }
@@ -570,17 +568,17 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
         -webkit-animation-fill-mode:forwards;
     }
     -webkit-@keyframes ToLinearLeft{
-       to{
+       100%{
             transform:translateX(0px);
        }
     }
     -moz-@keyframes ToLinearLeft{
-       to{
+       100%{
             transform:translateX(0px);
        }
     }
     @keyframes ToLinearLeft{
-       to{
+       100%{
             transform:translateX(0px);
        }
     }
@@ -594,19 +592,19 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
         animation:KeepRotate 3s infinite linear;
     }
     -webkit-@keyframes KeepRotate{
-        to{
+        100%{
            -webkit-transform: rotate(359deg);
            transform:rotate(359deg);
         }
      }
     -moz-@keyframes KeepRotate{
-        to{
+        100%{
            -webkit-transform: rotate(359deg);
            transform:rotate(359deg);
         }
      }
      @keyframes KeepRotate{
-        to{
+        100%{
            -webkit-transform: rotate(359deg);
            transform:rotate(359deg);
         }
@@ -617,35 +615,35 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
         animation:KeepWaggle 1.5s infinite ease-in-out;
     }
     -webkit-@keyframes KeepWaggle{
-       from{
+       0%{
             transform:translateY(40px);
        }
        50%{
         transform:translateY(0px);
        }
-       to{
+       100%{
             transform:translateY(40px);
        }
      }
     -moz-@keyframes KeepWaggle{
-       from{
+       0%{
             transform:translateY(40px);
        }
        50%{
         transform:translateY(0px);
        }
-       to{
+       100%{
             transform:translateY(40px);
        }
      }
     @keyframes KeepWaggle{
-       from{
+       0%{
             transform:translateY(40px);
        }
        50%{
         transform:translateY(0px);
        }
-       to{
+       100%{
             transform:translateY(40px);
        }
      }
@@ -655,7 +653,7 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
         animation:KeepWaggleLR 1.5s infinite ease-in-out;
     }
     -webkit-@keyframes KeepWaggleLR{
-       from{
+       0%{
             -webkit-transform:translateX(40px);
             -moz-transform:translateX(40px);
             transform:translateX(40px);
@@ -665,14 +663,14 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
             -moz-transform:translateX(0px);
             transform:translateX(0px);
        }
-       to{
+       100%{
             -webkit-transform:translateX(40px);
             -moz-transform:translateX(40px);
             transform:translateX(40px);
        }
      }
     -moz-@keyframes KeepWaggleLR{
-       from{
+       0%{
             -webkit-transform:translateX(40px);
             -moz-transform:translateX(40px);
             transform:translateX(40px);
@@ -682,14 +680,14 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
             -moz-transform:translateX(0px);
             transform:translateX(0px);
        }
-       to{
+       100%{
             -webkit-transform:translateX(40px);
             -moz-transform:translateX(40px);
             transform:translateX(40px);
        }
      }
     @keyframes KeepWaggleLR{
-       from{
+       0%{
             -webkit-transform:translateX(40px);
             -moz-transform:translateX(40px);
             transform:translateX(40px);
@@ -699,7 +697,7 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
             -moz-transform:translateX(0px);
             transform:translateX(0px);
        }
-       to{
+       100%{
             -webkit-transform:translateX(40px);
             -moz-transform:translateX(40px);
             transform:translateX(40px);
@@ -716,7 +714,7 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
         animation:ScaleFromStoB 1.5s linear;
     }
     -webkit-@keyframes ScaleFromBtoS{
-       from{
+       0%{
             -webkit-transform:scale(1.2);
             -moz-transform:scale(1.2);
             transform:scale(1.2);
@@ -724,14 +722,14 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
        }
      }
     -moz-@keyframes ScaleFromBtoS{
-       from{
+       0%{
             -webkit-transform:scale(1.2);
             -moz-transform:scale(1.2);
             transform:scale(1.2);
        }
      }
      @keyframes ScaleFromBtoS{
-       from{
+       0%{
             -webkit-transform:scale(1.2);
             -moz-transform:scale(1.2);
             transform:scale(1.2);
@@ -739,7 +737,7 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
      }
     
     -webkit-@keyframes ScaleFromStoB{
-       from{
+       0%{
             -webkit-transform:scale(.8);
             -moz-transform:scale(.8);
             transform:scale(.8);
@@ -747,7 +745,7 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
     
      }
     -moz-@keyframes ScaleFromStoB{
-       from{
+       0%{
             -webkit-transform:scale(.8);
             -moz-transform:scale(.8);
             transform:scale(.8);
@@ -755,7 +753,7 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
     
      }
     @keyframes ScaleFromStoB{
-       from{
+       0%{
            -webkit-transform:scale(.8);
            -moz-transform:scale(.8);
            transform:scale(.8);
@@ -768,17 +766,17 @@ FromRollRight：3step 1进入动画，2变大透明，3缩小消失。
         animation: widthStoB 1.5s linear;
     }
     -webkit-@keyframes widthStoB{
-        from{
+        0%{
             width: 0;
         }
     }
     -moz-@keyframes widthStoB{
-        from{
+        0%{
             width: 0;
         }
     }
     @keyframes widthStoB{
-        from{
+        0%{
             width: 0;
         }
     }

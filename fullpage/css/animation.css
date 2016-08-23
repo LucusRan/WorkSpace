@@ -431,3 +431,48 @@
             width: 0;
         }
     }
+
+
+    .skewXStoBFromLeft{
+         /* Safari 和 Chrome: */
+        -webkit-animation-name:skewXStoBFromLeft;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-timing-function: linear;
+        
+        /* Firefox: */
+        -moz-animation-name:skewXStoBFromLeft;
+        -moz-animation-duration: 2s;
+        -moz-animation-timing-function: linear;
+
+        animation-name:skewXStoBFromLeft;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+    }
+   @-webkit-keyframes skewXStoBFromLeft{
+          0%{
+            -webkit-transform:translateX(-500px);
+            transform:translateX(-500px);
+        }
+        60%{
+            -webkit-transform:skewX(25deg)  translateX(-100px);
+            transform:skewX(25deg)  translateX(-100px);
+        }
+        100%{
+            -webkit-transform:skewX(0)  translateX(0);
+            transform:skewX(0)  translateX(0);
+        }
+    }
+    @keyframes skewXStoBFromLeft{
+          0%{
+            -webkit-transform:translateX(-500px);
+            transform:translateX(-500px);
+        }
+        60%{
+            -webkit-transform:skewX(25deg)  translateX(-100px);
+            transform:skewX(25deg)  translateX(-100px);
+        }
+        100%{
+            -webkit-transform:skewX(0)  translateX(0);
+            transform:skewX(0)  translateX(0);
+        }
+    }

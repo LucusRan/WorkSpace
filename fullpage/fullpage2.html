@@ -15,21 +15,10 @@
 <body onload="CloseLoading()" id="FullPage"> 
 <!--<![endif]-->
 <div id="Loading"></div>
-<div id="music" class="onaudio keepRotate" onclick="AuOnOff()">
-<audio src="mp3/xxx.mp3" autoplay="autoplay"  loop="loop" id="aud">
-</audio>
-</div>
-<div class="pre-wrap">
-    <div class="pre-box1">
-        <div class="pre1"></div>
-    </div>
-    <div class="pre-box2">
-        <div class="pre2"></div>
-    </div>
-</div>
+
 	<div id="pageContain">
 		
-		<div class="page page1 current">
+		<div class="page page1  current">
 			<div class="contain">
 				
                 <div class="index-img">
@@ -70,19 +59,22 @@
         </div>
 		<div class="page page2">
 			<div class="contain">
-				<div class="con-img">
-                    <img src="img/1.jpg" class="FromLeftRollWord">           
+				<div class="con-img svg-bg02 skewXStoBFromLeft">
+                    <img src="img/1.jpg">
                 </div>
                 <div class="FromRightRollWord con-title">
                     <h2>小小书画家</h2>
+                </div>
+                <div class="positionCtoL FromLeftRollWord">
+                     <img src="img/mty.png" alt="" class="keepWaggle" style="width:60%;">
                 </div>
 			</div>
 		</div>
 
 		<div class="page page3">
 			<div class="contain">
-				<div class="con-img">
-                    <img src="img/1.jpg" class="scaleFromBtoS">           
+				<div class="con-img svg-bg01 scaleFromBtoS">
+                    <img src="img/1.jpg">           
                 </div>
                 <div class="FromTopRollWord con-title">
                     <h2>小小书画家</h2>
@@ -103,11 +95,14 @@
 
 		<div class="page page5">
 			<div class="contain">
-				<div class="con-img">
-                    <img src="img/1.jpg" class="FromBottomRollWord">           
+				<div class="con-img svg-bg03 FromBottomRollWord">
+                    <img src="img/1.jpg">           
                 </div>
                 <div class="FromLeftRollWord con-title">
                     <h2>小小书画家</h2>
+                </div>
+                <div class="positionCtoR FromLeftRollWord">
+                     <img src="img/lu.png" alt="" class="keepWaggle" style="width:60%;float: right;">
                 </div>
 			</div>
 		</div>
@@ -137,7 +132,18 @@
 	</div>
     
 
-
+<div id="music" class="onaudio keepRotate" onclick="AuOnOff()">
+<audio src="mp3/x.mp3" autoplay="autoplay"  loop="loop" id="aud">
+</audio>
+</div>
+<div class="pre-wrap">
+    <div class="pre-box1">
+        <div class="pre1"></div>
+    </div>
+    <div class="pre-box2">
+        <div class="pre2"></div>
+    </div>
+</div>
 <script type="text/javascript" src="js/fullPage.min.js"></script>
 <script type="text/javascript">
 function CloseLoading(){

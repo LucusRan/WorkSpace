@@ -16,7 +16,7 @@
 <!--<![endif]-->
 <div id="Loading"></div>
 <div id="music" class="onaudio keepRotate" onclick="AuOnOff()">
-<audio src="mp3/xxx.mp3" autoplay="autoplay"  loop="loop" id="aud">
+<audio src="mp3/xxx.mp3"  loop="loop" id="aud">
 </audio>
 </div>
 <div class="pre-wrap">
@@ -142,6 +142,7 @@
 <script type="text/javascript">
 function CloseLoading(){
     document.getElementById("Loading").style.display="none";
+    document.getElementById('aud').play();
 }
 function AuOnOff(){
 var music = document.getElementById('music');

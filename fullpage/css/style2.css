@@ -197,26 +197,22 @@ html {
         -webkit-transition-duration: 0ms !important;
     }
     .page1 {
-         background: linear-gradient(
-                #64ccfc,#3e8ff2);
+         background: #8DC153;
     }
     .page2 {
-        background: linear-gradient(
-               #6fedd1,#4abfb7);
+        background: #FCF08E;
     }
     .page3 {
-         background: linear-gradient(
-               #f38e65,#f2686d);
+         background: #FFCE55;
     }
     .page4 {
-         background: linear-gradient(
-                #fecd70,#ec8d2c);
+         background: #F6BB43;
     }
     .page5 {
-        background: #00ff00;
+        background: #EC87C1;
     }
     .page6 {
-        background: #22ffff;
+        background: #50C1E9;
     }
     
 
@@ -308,10 +304,44 @@ html {
     }   
     .con-img img{
         width: 100%;
+        max-height: 65vh;
         border-radius: 15px;
         box-shadow: 0 0 0 5px #fefefe;
     }
- 
+    .svg-bg01{
+        background: url(../img/bg01.svg);
+        background-size: 100% 100%;
+    }
+    .svg-bg01 img{
+        box-shadow: none;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .svg-bg02{
+        background: url(../img/bg02.svg);
+        background-size: 100% 100%;
+        padding: 8vh 30px;
+        height: 70vh;
+        box-sizing: border-box;
+    }
+    .svg-bg02 img{
+        box-shadow: none;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .svg-bg03{
+        background: url(../img/bg03.svg);
+        background-size: 100% 100%;
+    }
+     .svg-bg03 img{
+        box-shadow: none;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+
+
+
     .con-title{
         text-align: center;
     }
@@ -373,49 +403,6 @@ html {
     }
 
 
-
-
-
-    .positionBtoR{
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
-    }
-    .positionTtoR{
-        position: absolute;
-        top: 10px;
-        right: 10px;
-    }
-    .positionCtoR{
-        position: absolute;
-        bottom:40%;
-        right: 10px;
-    }
-    .positionBtoL{
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-    }
-    .positionCtoL{
-        position: absolute;
-        bottom: 40%;
-        left: 10px;
-    }
-    .positionTtoL{
-        position: absolute;
-        top: 10px;
-        left: 10px;
-    }
-    .positionTtoC{
-        position: absolute;
-        top: 10px;
-        left: 40%;
-    }
-    .positionBtoC{
-        position: absolute;
-        bottom: 10px;
-        left: 40%;
-    }
 
 
 
